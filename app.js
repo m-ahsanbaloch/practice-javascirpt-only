@@ -61,14 +61,20 @@
 //    console.log(arr)
 // }
 // button.addEventListener("click",myPush(input.value));
-var input = document.getElementById("inp")
-var button = document.getElementById("btn")
-var arr = []
-function myPush(value){
+// var input = document.getElementById("inp")
+// var button = document.getElementById("btn")
+// var arr = []
+// function myPush(value){
+//    arr[arr.length] = input.value
+//    console.log(arr)
+// }  
+  var input = document.getElementById("inp")
+  var button = document.getElementById("btn")
+  var arr = []
+  function myPush(value){
    arr[arr.length] = input.value
    console.log(arr)
-}  
-  
+  }
 
 
 
