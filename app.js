@@ -68,13 +68,13 @@
 //    arr[arr.length] = input.value
 //    console.log(arr)
 // }  
-  var input = document.getElementById("inp")
-  var button = document.getElementById("btn")
-  var arr = []
-  function myPush(value){
-   arr[arr.length] = input.value
-   console.log(arr)
-  }
+  // var input = document.getElementById("inp")
+  // var button = document.getElementById("btn")
+  // var arr = []
+  // function myPush(value){
+  //  arr[arr.length] = input.value
+  //  console.log(arr)
+  // }
 
 
 
@@ -84,3 +84,12 @@
 //    var inputValue = input.value;
 //    console.log(inputValue)
 // })
+function myFunc(a,b){
+//  var result = a + b
+ 
+  return a + b ;
+ 
+}
+// myFunc(10,5)
+
+console.log(myFunc(15,5))
