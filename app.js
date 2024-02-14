@@ -93,13 +93,40 @@
 // // myFunc(10,5)
 
 // console.log(myFunc(15,5))
+// ==============assigment-chaper-9-10================
+// var cityName = prompt("enter your city name")
+// if(cityName === "karachi"){
+//   alert("welcome to the city of lights")
+// }else{
+//   alert("wrong city entered")
+// }
+// var gender = prompt("enter your gender")
+// if(gender === "male"){
+// alert("Good Morning Sir")
+// }else(alert("Good Morning Madam"))
+// var signalColor = prompt("enter color name to know alerts")
+// if(signalColor === "red"){
+//   alert("Must Stop")
+// }
+// if(signalColor === "yellow"){
+//   alert("Ready to Move")
+// }
 
+// if(signalColor === "green"){
+//   alert("move now")
+// }
 
-var input = document.getElementById("inpu");
-var button = document.getElementById("btn1")
-function myNew(a,b){
+// var fuel = prompt("how many fuel left your vehicle in litres")
+// if(fuel <= 0.25){
+//   alert("“Please refill the fuel in your car”")
+// }else{alert("dont Worry and go on")}
+// ==============assigment-chaper-9-10================
+
+// var input = document.getElementById("inpu");
+// var button = document.getElementById("btn1")
+// function myNew(a,b){
  
-  return a * b
+//   return a * b
 
-}
+// }
 // myNew(input.value)
