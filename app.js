@@ -84,12 +84,22 @@
 //    var inputValue = input.value;
 //    console.log(inputValue)
 // })
-function myFunc(a,b){
-//  var result = a + b
+// function myFunc(a,b){
+// //  var result = a + b
  
-  return a + b ;
+//   return a + b ;
  
-}
-// myFunc(10,5)
+// }
+// // myFunc(10,5)
 
-console.log(myFunc(15,5))
+// console.log(myFunc(15,5))
+
+
+var input = document.getElementById("inpu");
+var button = document.getElementById("btn1")
+function myNew(a,b){
+ 
+  return a * b
+
+}
+// myNew(input.value)
