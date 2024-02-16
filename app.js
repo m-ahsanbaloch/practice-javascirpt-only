@@ -150,16 +150,21 @@
 // if (totalCost === laborCost + materialCost){
 // alert("The cost equals " + totalCost);
 // }
-if("car" < "cat"){
-  alert("car is smaller than cat");
-  }
+// if("car" < "cat"){
+//   alert("car is smaller than cat");
+//   }
 // ==============assigment-chaper-9-10================
 
-// var input = document.getElementById("inpu");
-// var button = document.getElementById("btn1")
-// function myNew(a,b){
+var input = document.getElementById("inpu");
+var button = document.getElementById("btn1")
+function myNew(a,b){
  
-//   return a * b
+  return a * b
 
-// }
+}
+function myNew2(value){
+  myNew(input.value,)
+  // mynew = inputValue
+}
+
 // myNew(input.value)
