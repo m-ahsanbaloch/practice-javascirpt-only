@@ -169,12 +169,26 @@
 
 // myNew(input.value)
 
-var screen = document.getElementById("screen")
+// var screen = document.getElementById("screen")
+// var button = document.getElementById("btn")
+// function addToDisplay(value){
+// var calcValue = screen.value
+// var calcValue = calcValue[calcValue.length -2]
+// screen.value = value
+// }
+// ===---===---===
+// function myFunction(){
+// var sum = 2 + 2;
+// return sum;
+// }
+// var sum = myFunction()
+// console.log(sum)
+
+var namee = document.getElementById("name")
 var button = document.getElementById("btn")
-function addToDisplay(value){
-   var calculatorValue = screen.value;
-   var  result = calculatorValue[calculatorValue.length -1]
-   newInput = value
-  // document.write(value)
-  screen.value = value
+function neww(value){
+  var fullV = namee.value
+  var fullV = fullV[fullV.length -2]
+  namee.value = value
+  console.log(value)
 }
