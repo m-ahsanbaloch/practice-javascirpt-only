@@ -155,16 +155,26 @@
 //   }
 // ==============assigment-chaper-9-10================
 
-var input = document.getElementById("inpu");
-var button = document.getElementById("btn1")
-function myNew(a,b){
+// var input = document.getElementById("inpu");
+// var button = document.getElementById("btn1")
+// function myNew(a,b){
  
-  return a * b
+//   return a * b
 
-}
-function myNew2(value){
-  myNew(input.value,)
-  // mynew = inputValue
-}
+// }
+// function myNew2(value){
+//   myNew(input.value,)
+//   // mynew = inputValue
+// }
 
 // myNew(input.value)
+
+var screen = document.getElementById("screen")
+var button = document.getElementById("btn")
+function addToDisplay(value){
+   var calculatorValue = screen.value;
+   var  result = calculatorValue[calculatorValue.length -1]
+   newInput = value
+  // document.write(value)
+  screen.value = value
+}
