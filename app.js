@@ -184,11 +184,32 @@
 // var sum = myFunction()
 // console.log(sum)
 
-var namee = document.getElementById("name")
-var button = document.getElementById("btn")
-function neww(value){
-  var fullV = namee.value
-  var fullV = fullV[fullV.length -2]
-  namee.value = value
-  console.log(value)
-}
+// var day = ["sunday" ,"monday","friday"]
+// var daySearch = prompt("enter days")
+// switch(daySearch){
+  //   case "sunday":
+  //   alert("yeaa its funday")
+  //   break;
+  //   case "friday":
+  //   alert("its prayday")
+  //   break;
+  //   default :
+  //   alert("bad day")
+  // }
+  // var namee = document.getElementById("name")
+  // var button = document.getElementById("btn")
+  // function neww(value){
+  //   var fullV = namee.value
+  //   var fullV = fullV[fullV.length -2]
+  //   namee.value = value
+  //   console.log(value)
+  // }
+  var str = "5+5-"
+  var newInput = "*"
+  var last = str[str.length -1]
+  var operator = ["-","+","/","*"]
+  console.log(last)
+  if(operator.indexOf(last) !== -1){
+    str = str.slice(0, -1) + newInput
+    console.log(str)
+  }
