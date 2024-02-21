@@ -218,12 +218,11 @@
   //   namee.value = value
   //   console.log(value)
   // }
-var str = "5+5-"
-var newInput = "*"
-var operator = ["-","+","/","*"]
+var  str = "5+5-"
+var newInput = "-"
+var operator = ["+","-","/","*"]
 var last = str[str.length -1]
 if(operator.indexOf(last) !== -1){
-  if(newInput.indexOf(operator[operator.length -1]) !== -1)
   str = str.slice(0,-1) + newInput
-  console.log(str)
+console.log(str )
 }
