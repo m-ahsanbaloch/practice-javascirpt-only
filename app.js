@@ -218,20 +218,16 @@
   //   namee.value = value
   //   console.log(value)
   // }
+  var input = document.getElementById("name")
+  var button = document.getElementById("btn")
+function neww(value){
+  input = input.value = value
+  // button = button.value = value
 var  str = "5+5-"
-var newInput = "-"
+var newInput = "+"
 var operator = ["+","-","/","*"]
 var last = str[str.length -1]
 if(operator.indexOf(last) !== -1){
   str = str.slice(0,-1) + newInput
 console.log(str  )
-}
-var days = prompt("enter days name")
-switch (days){
-case "monday":
-alert("its work day");
-break;
-case "sunday":
-  alert("yeaa its funday")
-  break
-}
+}}
