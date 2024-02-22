@@ -224,10 +224,11 @@ function neww(value){
   input = input.value = value
   // button = button.value = value
 var  str = "5+5-"
-var newInput = "+"
+var newInput = operator
 var operator = ["+","-","/","*"]
 var last = str[str.length -1]
-if(operator.indexOf(last) !== -1){
+if(operator.indexOf(last) !== -1 && str.indexOf(operator) !== -1) {
+
   str = str.slice(0,-1) + newInput
-console.log(str   )
+console.log(str)
 }}
