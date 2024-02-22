@@ -229,5 +229,5 @@ var operator = ["+","-","/","*"]
 var last = str[str.length -1]
 if(operator.indexOf(last) !== -1){
   str = str.slice(0,-1) + newInput
-console.log(str  )
+console.log(str   )
 }}
