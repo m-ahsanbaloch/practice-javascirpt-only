@@ -226,3 +226,12 @@ if(operator.indexOf(last) !== -1){
   str = str.slice(0,-1) + newInput
 console.log(str  )
 }
+var days = prompt("enter days name")
+switch (days){
+case "monday":
+alert("its work day");
+break;
+case "sunday":
+  alert("yeaa its funday")
+  break
+}
