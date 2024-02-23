@@ -218,17 +218,17 @@
   //   namee.value = value
   //   console.log(value)
   // }
+function neww(value){
   var input = document.getElementById("name")
   var button = document.getElementById("btn")
-function neww(value){
-  input = input.value = value
-  // button = button.value = value
-var  str = "5+5-"
-var newInput = operator
-var operator = ["+","-","/","*"]
-var last = str[str.length -1]
-if(operator.indexOf(last) !== -1 && str.indexOf(operator) !== -1) {
-
-  str = str.slice(0,-1) + newInput
-console.log(str)
-}}
+  // =====
+  input = input.value += value
+  var operator = ["+","-","/","*"]
+ 
+  console.log(input)
+}
+var arr = [["abc","xyz"],["123","456"]]
+for(var i = 0; i < arr.length ;i++){
+  for(j = 0 ; j < arr[i].length; j++)
+  console.log(arr[i])
+}
