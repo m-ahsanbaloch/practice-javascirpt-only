@@ -222,13 +222,11 @@ function neww(value){
   var input = document.getElementById("name")
   var button = document.getElementById("btn")
   // =====
-  input = input.value += value
+  input = input.value = value
+  var newInput = value += input
+  // newInput += newInput + input.length -1
+
   var operator = ["+","-","/","*"]
  
-  console.log(input)
-}
-var arr = [["abc","xyz"],["123","456"]]
-for(var i = 0; i < arr.length ;i++){
-  for(j = 0 ; j < arr[i].length; j++)
-  console.log(arr[i][j])
+  console.log(input + newInput)
 }
