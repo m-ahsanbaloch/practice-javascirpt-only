@@ -230,5 +230,5 @@ function neww(value){
 var arr = [["abc","xyz"],["123","456"]]
 for(var i = 0; i < arr.length ;i++){
   for(j = 0 ; j < arr[i].length; j++)
-  console.log(arr[i])
+  console.log(arr[i][j])
 }
