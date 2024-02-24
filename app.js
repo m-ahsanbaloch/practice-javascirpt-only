@@ -44,7 +44,7 @@
 //     var inputValue = input.value;
 //     console.log(inputValue)
 //  })
- 
+
 // var input = document.getElementById("inp");
 // var button = document.getElementById("btn")
 // var arr =[]
@@ -67,17 +67,14 @@
 // function myPush(value){
 //    arr[arr.length] = input.value
 //    console.log(arr)
-// }  
-  // var input = document.getElementById("inp")
-  // var button = document.getElementById("btn")
-  // var arr = []
-  // function myPush(value){
-  //  arr[arr.length] = input.value
-  //  console.log(arr)
-  // }
-
-
-
+// }
+// var input = document.getElementById("inp")
+// var button = document.getElementById("btn")
+// var arr = []
+// function myPush(value){
+//  arr[arr.length] = input.value
+//  console.log(arr)
+// }
 
 // myPush(input.value).addEventListener(click, button)
 // myPush.addEventListener("click", myPush(){
@@ -86,9 +83,9 @@
 // })
 // function myFunc(a,b){
 // //  var result = a + b
- 
+
 //   return a + b ;
- 
+
 // }
 // // myFunc(10,5)
 
@@ -158,7 +155,7 @@
 // var input = document.getElementById("inpu");
 // var button = document.getElementById("btn1")
 // function myNew(a,b){
- 
+
 //   return a * b
 
 // }
@@ -187,46 +184,56 @@
 // var day = ["sunday" ,"monday","friday"]
 // var daySearch = prompt("enter days")
 // switch(daySearch){
-  //   case "sunday":
-  //   alert("yeaa its funday")
-  //   break;
-  //   case "friday":
-  //   alert("its prayday")
-  //   break;
-  //   default :
-  //   alert("bad day")
-  // }
-  // var days = prompt("enter day");
-  // switch(days){
-  //   case "monday":
-  //     alert("ohh its work day");
-  //     break
-  //     case "sunday":
-  //       alert("yeaa its funday")
-  //       break
-  //       case "friday":
-  //         alert("yeaa its prayday")
-  //         break
-  //         default:
-  //           alert("its your bad day")
-  // }
-  // var namee = document.getElementById("name")
-  // var button = document.getElementById("btn")
-  // function neww(value){
-  //   var fullV = namee.value
-  //   var fullV = fullV[fullV.length -2]
-  //   namee.value = value
-  //   console.log(value)
-  // }
-function neww(value){
-  var input = document.getElementById("name")
-  var button = document.getElementById("btn")
+//   case "sunday":
+//   alert("yeaa its funday")
+//   break;
+//   case "friday":
+//   alert("its prayday")
+//   break;
+//   default :
+//   alert("bad day")
+// }
+// var days = prompt("enter day");
+// switch(days){
+//   case "monday":
+//     alert("ohh its work day");
+//     break
+//     case "sunday":
+//       alert("yeaa its funday")
+//       break
+//       case "friday":
+//         alert("yeaa its prayday")
+//         break
+//         default:
+//           alert("its your bad day")
+// }
+// var namee = document.getElementById("name")
+// var button = document.getElementById("btn")
+// function neww(value){
+//   var fullV = namee.value
+//   var fullV = fullV[fullV.length -2]
+//   namee.value = value
+//   console.log(value)
+// }
+var input = document.getElementById("name");
+function neww(value) {
+  // console.log(value);
+  var button = document.getElementById("btn");
   // =====
-  input = input.value = value
-  var newInput = value += input
+
+  input.value += value;
+  if(input.value.lastIndexOf("+") !== -1){
+    var index = input.value.lastIndexOf("+");
+      input.value = input.value.slice(0,-1)
+      console.log(index)
+  }
+  // console.log() ;
+
+
+  var newInput = (value += input);
   // newInput += newInput + input.length -1
 
-  var operator = ["+","-","/","*"]
- 
-  console.log(input + newInput)
+  var operator = ["+", "-", "/", "*"];
+
+  // console.log(input + newInput)
 }
