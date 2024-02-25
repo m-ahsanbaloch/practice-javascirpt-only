@@ -215,25 +215,40 @@
 //   namee.value = value
 //   console.log(value)
 // }
-var input = document.getElementById("name");
-function neww(value) {
-  // console.log(value);
-  var button = document.getElementById("btn");
-  // =====
+// var input = document.getElementById("inpit");
+// function neww(value) {
+//   // console.log(value);
+//   var button = document.getElementById("btn");
+//   // =====
 
-  input.value += value;
-  if(input.value.lastIndexOf("+") !== -1){
-    var index = input.value.lastIndexOf("+");
-      input.value = input.value.slice(0,-1)
-      console.log(index)
-  }
-  // console.log() ;
+//   input.value += value;
+//   if(input.value.lastIndexOf("+") !== -1){
+//     var index = input.value.lastIndexOf("+");
+//       input.value = input.value.slice(0,-1)
+//       console.log(index)
+//   }
+//   // console.log() ;
 
 
-  var newInput = (value += input);
-  // newInput += newInput + input.length -1
+//   var newInput = (value += input);
+//   // newInput += newInput + input.length -1
 
-  var operator = ["+", "-", "/", "*"];
+//   var operator = ["+", "-", "/", "*"];
 
-  // console.log(input + newInput)
+//   // console.log(input + newInput)
+// }
+
+function neww(value){
+  var input = document.getElementById("input")
+  var lastWord = input.value.slice(input.value.length -1)
+  console.log(lastWord)
+  if(value.indexOf("+") !== -1 && lastWord === "+"){
+    input.value = input.value.slice(0,-1) + value;
+    alert(input.value);
+
+  }else{input.value += value}
+}
+function equal(){
+  var total = eval(input.value);
+  input.value = total;
 }
