@@ -256,14 +256,28 @@
 //   cleann = input.value = ''
 //   input.value = cleann 
 // }
-var text = "hi this is ahsan baloch"
-var search = prompt("enter which word you like to search");
-var check = false 
-for(i = 0 ; i < text.length; i++){
-  if(text.indexOf(search.length) !== -1 ){
+// var text = "hi this is ahsan baloch"
+// var search = prompt("enter which word you like to search");
+// var check = false 
+// for(i = 0 ; i < text.length; i++){
+//   var found = text.slice(i,i + search.length)
+//   if(found === search){
+//     check = true
+//     console.log(search + " found")
+//   }
+// } if(check == false){
+//   console.log(search + " "+ "not found")
+// } 
+
+var text = "hi this is ahsan baloch from karachi pakistan"
+var search = prompt("enter which word would you like to search ")
+var check = false
+for(i = 0; i < text.length ; i++){
+  if(text.indexOf(search) !== -1){
     check = true
-    console.log("karachi Found")
-  }else{
-  console.log("wronge input")
+    console.log(search + " " + "found ")
   }
+}
+if(check == false){
+  console.log(search + " " +"not found")
 }
