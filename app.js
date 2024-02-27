@@ -269,15 +269,15 @@
 //   console.log(search + " "+ "not found")
 // } 
 
-var text = "hi this is ahsan baloch from karachi pakistan"
-var search = prompt("enter which word would you like to search ")
-var check = false
-for(i = 0; i < text.length ; i++){
-  if(text.indexOf(search) !== -1){
-    check = true
-    console.log(search + " " + "found ")
-  }
-}
-if(check == false){
-  console.log(search + " " +"not found")
-}
+// var text = "hi this is ahsan baloch from karachi pakistan"
+// var search = prompt("enter which word would you like to search ")
+// var check = false
+// for(i = 0; i < text.length ; i++){
+//   if(text.indexOf(search) !== -1){
+//     check = true
+//     console.log(search + " " + "found ")
+//   }
+// }
+// if(check == false){
+//   console.log(search + " " +"not found")
+// }
