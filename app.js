@@ -310,18 +310,22 @@
 //  orderTot = merchTot + 5 + (.03 * (merchTot - 50));
 //  }
 //  console.log(orderTot)
-    function calcTot(merchTot) {
-     var orderTot;
-     if (merchTot >= 100) {
-     orderTot = merchTot;
-     }
-     else if (merchTot < 50.01) {
-     orderTot = merchTot + 5;
-     }
-     else {
-     orderTot = merchTot + 5 + (.03 * (merchTot - 50));
-     }
-     return orderTot;
-    }
-    var totalToCharge = calcTot(79.99);
-alert(totalToCharge)
+
+///////////============///////////
+// parameter first take value from arguement then function work and return back the answere to parameter which is called
+//     function calcTot(merchTot) {
+//   var neww = 25
+//   merchTot = merchTot + neww
+//   return merchTot
+// //   alert(merchTot)
+// }
+//   var totalToCharge = calcTot(50.99);
+// alert(totalToCharge)
+
+// function myTest(check){
+//     var neww = 50
+//     check = check + neww
+//     return check
+// }
+// var total = myTest(+prompt("please enter a number"))
+// alert(total)
