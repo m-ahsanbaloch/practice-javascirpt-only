@@ -293,8 +293,35 @@
 // }
 // tellTime(prompt("which word would you like to greet"))
 
-var month = "March";
-function showMessage(m,string,num){
-    alert(m+string+num)
-}
-showMessage("february ","winter is going off", 2)
+// var month = "March";
+// function showMessage(m,string,num){
+//     alert(m+string+num)
+// }
+// showMessage("february ","winter is going off", 2)
+// var orderTot;
+// var merchTot = 75;
+//  if (merchTot >= 100) {
+//  orderTot = merchTot;
+//  }
+//  else if (merchTot < 50.01) {
+//  orderTot = merchTot + 5;
+//  }
+//  else {
+//  orderTot = merchTot + 5 + (.03 * (merchTot - 50));
+//  }
+//  console.log(orderTot)
+    function calcTot(merchTot) {
+     var orderTot;
+     if (merchTot >= 100) {
+     orderTot = merchTot;
+     }
+     else if (merchTot < 50.01) {
+     orderTot = merchTot + 5;
+     }
+     else {
+     orderTot = merchTot + 5 + (.03 * (merchTot - 50));
+     }
+     return orderTot;
+    }
+    var totalToCharge = calcTot(79.99);
+alert(totalToCharge)
