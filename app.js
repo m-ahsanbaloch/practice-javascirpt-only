@@ -281,3 +281,20 @@
 // if(check == false){
 //   console.log(search + " " +"not found")
 // }
+
+// function tellTime(greet){
+// // var greet = "hello world"
+// alert(greet)
+// //     var now = new Date();
+// // var theHr = now.getHours();
+// // var theMin = now.getMinutes();
+// // alert("time: " + theHr + ":" + theMin )
+
+// }
+// tellTime(prompt("which word would you like to greet"))
+
+var month = "March";
+function showMessage(m,string,num){
+    alert(m+string+num)
+}
+showMessage("february ","winter is going off", 2)
