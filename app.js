@@ -332,7 +332,7 @@
 
 var input = document.getElementById("input")
 function plus(plusValue){
-    var screen = screen = input.value = plusValue.slice(0,1)
+    var screen = screen = input.value += plusValue.slice(0,1)
     if(screen.indexOf("+") !== -1){
        var neww = input.value.slice(0,1)
        console.log(neww)
@@ -342,10 +342,10 @@ function plus(plusValue){
     return screen
 }
 function mul(mValue){
-    var screen = screen = input.value = mValue.slice(0,1)
-    if(screen.indexOf("+") !== -1){
-       var neww = input.value.slice(0,1)
-       console.log(neww)
+    var screen = screen = input.value += mValue.slice(0,1)
+    if(screen.indexOf("*") !== -1){
+       var neww1 = input.value.slice(0,1)
+       console.log(neww1)
         
     }
     console.log(screen.slice(0,1))
@@ -353,11 +353,15 @@ function mul(mValue){
 }
 function neww(Value){
     var screen = screen = input.value += Value.slice(0,1)
-    if(screen.indexOf("+") !== -1){
-       var neww = input.value.slice(0,1)
-       console.log(neww)
+    if(screen.indexOf("2") !== -1){
+       var neww2 = input.value.slice(0,1)
+       console.log(neww2)
         
     }
     console.log(screen.slice(0,1))
     return screen
+}
+function equal(evalue){
+    var total = eval(input.value)
+    input.value = total
 }
