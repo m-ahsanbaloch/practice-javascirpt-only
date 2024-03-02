@@ -330,38 +330,47 @@
 // var total = myTest(+prompt("please enter a number"))
 // alert(total)
 
-var input = document.getElementById("input")
-function plus(plusValue){
-    var screen = screen = input.value += plusValue.slice(0,1)
-    if(screen.indexOf("+") !== -1){
-       var neww = input.value.slice(0,1)
-       console.log(neww)
+// var input = document.getElementById("input")
+// function plus(plusValue){
+//     var screen = screen = input.value += plusValue.slice(0,1)
+//     if(screen.indexOf("+") !== -1){
+//        var neww = input.value.slice(0,1)
+//        console.log(neww)
         
-    }
-    console.log(screen.slice(0,1))
-    return screen
-}
-function mul(mValue){
-    var screen = screen = input.value += mValue.slice(0,1)
-    if(screen.indexOf("*") !== -1){
-       var neww1 = input.value.slice(0,1)
-       console.log(neww1)
+//     }
+//     console.log(screen.slice(0,1))
+//     return screen
+// }
+// function mul(mValue){
+//     var screen = screen = input.value += mValue.slice(0,1)
+//     if(screen.indexOf("*") !== -1){
+//        var neww1 = input.value.slice(0,1)
+//        console.log(neww1)
         
-    }
-    console.log(screen.slice(0,1))
-    return screen
-}
-function neww(Value){
-    var screen = screen = input.value += Value.slice(0,1)
-    if(screen.indexOf("2") !== -1){
-       var neww2 = input.value.slice(0,1)
-       console.log(neww2)
+//     }
+//     console.log(screen.slice(0,1))
+//     return screen
+// }
+// function neww(Value){
+//     var screen = screen = input.value += Value.slice(0,1)
+//     if(screen.indexOf("2") !== -1){
+//        var neww2 = input.value.slice(0,1)
+//        console.log(neww2)
         
-    }
-    console.log(screen.slice(0,1))
-    return screen
-}
-function equal(evalue){
-    var total = eval(input.value)
-    input.value = total
-}
+//     }
+//     // console.log(screen.slice(0,1))
+//     return screen
+// }
+// function equal(evalue){
+//     var total = eval(input.value)
+//     input.value = total
+//     console.log(total)
+// }
+// function clear(cValue){
+//     var screen = screen = input.value += cValue.slice(0,1)
+//  if(screen.indexOf("c") !== -1){
+//     var clear = input.value = ""
+//     console.log(clear)
+//  }
+ 
+// }
