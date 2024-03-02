@@ -374,3 +374,22 @@
 //  }
  
 // }
+
+var num1 = +prompt("enter first number")
+var operator = prompt("enter operator")
+var num2 = +prompt("enter second number")
+if(operator === "+"){
+    alert(num1 + num2)
+}
+else if(operator === "-"){
+    alert(num1 - num2)
+}
+else if(operator === "*"){
+    alert(num1 * num2)
+}
+else if(operator === "/"){
+    alert(num1 / num2)
+}
+else{
+    alert("enter valid number/operator")
+}
