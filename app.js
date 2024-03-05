@@ -399,8 +399,13 @@
 
 // var string = "ahsan"
 // string = string.split("")
-// reverse = string.reverse("");
-// join = reverse.join("")
-// console.log(join)
-
-// string reverse done
+// var reverser = string.reverse("")
+// var join = reverser.join("");
+//     console.log(join);
+// var string =  "kayak";
+// var revString = string.split("").reverse("").join("")
+// var myString = string
+// if(myString === revString){
+//     console.log("Yes it is palindrome")
+// }
+// else{console.log("no it is not palindrome")}
