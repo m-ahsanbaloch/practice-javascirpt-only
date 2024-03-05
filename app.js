@@ -375,140 +375,32 @@
  
 // }
 
-var num1 = +prompt("enter first number")
-var operator = prompt("enter operator")
-var num2 = +prompt("enter second number")
-if(operator === "+"){
-    alert(num1 + num2)
-}
-else if(operator === "-"){
-    alert(num1 - num2)
-}
-else if(operator === "*"){
-    alert(num1 * num2)
-}
-else if(operator === "/"){
-    alert(num1 / num2)
-}
-else{
-    alert("enter valid number/operator")
-}
+// var num1 = +prompt("enter first number")
+// var operator = prompt("enter operator")
+// var num2 = +prompt("enter second number")
+// if(operator === "+"){
+//     alert(num1 + num2)
+// }
+// else if(operator === "-"){
+//     alert(num1 - num2)
+// }
+// else if(operator === "*"){
+//     alert(num1 * num2)
+// }
+// else if(operator === "/"){
+//     alert(num1 / num2)
+// }
+// else{
+//     alert("enter valid number/operator")
+// }
+// // =====
 
-// =====
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Calculator</title>
-<style>
-    body {
-        font-family: Arial, sans-serif;
-    }
-    .calculator {
-        width: 300px;
-        margin: 0 auto;
-        padding: 20px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        background-color: #f9f9f9;
-    }
-    .btn {
-        width: 50px;
-        height: 50px;
-        margin: 5px;
-        font-size: 20px;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-    }
-    .btn.operator {
-        background-color: #f3af32;
-        color: #fff;
-    }
-    .btn.equal {
-        background-color: #2980b9;
-        color: #fff;
-    }
-</style>
-</head>
-<body>
+// *************** Solve BAsic Questions ***********
 
-<div class="calculator">
-    <input type="text" id="display" disabled>
-    <div>
-        <button class="btn" onclick="appendNumber('7')">7</button>
-        <button class="btn" onclick="appendNumber('8')">8</button>
-        <button class="btn" onclick="appendNumber('9')">9</button>
-        <button class="btn operator" onclick="setOperator('+')">+</button>
-    </div>
-    <div>
-        <button class="btn" onclick="appendNumber('4')">4</button>
-        <button class="btn" onclick="appendNumber('5')">5</button>
-        <button class="btn" onclick="appendNumber('6')">6</button>
-        <button class="btn operator" onclick="setOperator('-')">-</button>
-    </div>
-    <div>
-        <button class="btn" onclick="appendNumber('1')">1</button>
-        <button class="btn" onclick="appendNumber('2')">2</button>
-        <button class="btn" onclick="appendNumber('3')">3</button>
-        <button class="btn operator" onclick="setOperator('*')">*</button>
-    </div>
-    <div>
-        <button class="btn" onclick="clearDisplay()">C</button>
-        <button class="btn" onclick="appendNumber('0')">0</button>
-        <button class="btn equal" onclick="calculate()">=</button>
-        <button class="btn operator" onclick="setOperator('/')">/</button>
-    </div>
-</div>
+// var string = "ahsan"
+// string = string.split("")
+// reverse = string.reverse("");
+// join = reverse.join("")
+// console.log(join)
 
-<script>
-    let displayValue = '';
-    let operator = '';
-    let firstOperand = '';
-    let secondOperand = '';
-
-    function appendNumber(number) {
-        displayValue += number;
-        document.getElementById('display').value = displayValue;
-    }
-
-    function setOperator(op) {
-        operator = op;
-        firstOperand = displayValue;
-        displayValue = '';
-    }
-
-    function calculate() {
-        secondOperand = displayValue;
-        let result;
-        switch (operator) {
-            case '+':
-                result = parseInt(firstOperand) + parseInt(secondOperand);
-                break;
-            case '-':
-                result = parseInt(firstOperand) - parseInt(secondOperand);
-                break;
-            case '*':
-                result = parseInt(firstOperand) * parseInt(secondOperand);
-                break;
-            case '/':
-                result = parseInt(firstOperand) / parseInt(secondOperand);
-                break;
-            default:
-                result = 'Error';
-        }
-        document.getElementById('display').value = result;
-        displayValue = '';
-        firstOperand = '';
-        secondOperand = '';
-    }
-
-    function clearDisplay() {
-        displayValue = '';
-        document.getElementById('display').value = '';
-    }
-</script>
-
-</body>
-</html>
+// string reverse done
