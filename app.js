@@ -417,11 +417,12 @@
 //     }
 // }
 // console.log(number)
-let str = 'hello world';
-let result = '';
-for (let i = 0; i < str.length; i++) {
-  if (result.indexOf(str[i]) === -1) {
-    result += str[i];
-  }
-}
-console.log(result); //
+// let str = 'hello world';
+// let result = '';
+// for (let i = 0; i < str.length; i++) {
+//   if (result.indexOf(str[i]) === -1) {
+//     result += str[i];
+//   }
+// }
+// console.log(result); //
+
