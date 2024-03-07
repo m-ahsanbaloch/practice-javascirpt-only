@@ -426,3 +426,6 @@
 // }
 // console.log(result); //
 
+var name = "ahsan baloch"
+name = name.split("").reverse("").join("")
+console.log(name)
