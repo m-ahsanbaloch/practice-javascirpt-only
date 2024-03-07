@@ -426,6 +426,16 @@
 // }
 // console.log(result); //
 
-var name = "ahsan baloch"
-name = name.split("").reverse("").join("")
-console.log(name)
+var search = prompt("enter word to search");
+if(search >= "a" && search <= "z"){
+    console.log(search.charCodeAt() +  " " + "lower Case")
+}
+else if(search >= "A" && search  <= "Z"){
+    console.log(search.charCodeAt() + " " + "Upper Case")
+}
+else  if(search >= "0" && search <= "9" ){
+    console.log(search.charCodeAt() + " " + "is number")
+}
+else{
+    console.log(search.charCodeAt() + " " + "symbols")
+}
