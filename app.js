@@ -426,16 +426,22 @@
 // }
 // console.log(result); //
 
-var search = prompt("enter word to search");
-if(search >= "a" && search <= "z"){
-    console.log(search.charCodeAt() +  " " + "lower Case")
-}
-else if(search >= "A" && search  <= "Z"){
-    console.log(search.charCodeAt() + " " + "Upper Case")
-}
-else  if(search >= "0" && search <= "9" ){
-    console.log(search.charCodeAt() + " " + "is number")
-}
-else{
-    console.log(search.charCodeAt() + " " + "symbols")
-}
+// var search = prompt("enter word to search");
+// if(search >= "a" && search <= "z"){
+//     console.log(search.charCodeAt() +  " " + "lower Case")
+// }
+// else if(search >= "A" && search  <= "Z"){
+//     console.log(search.charCodeAt() + " " + "Upper Case")
+// }
+// else  if(search >= "0" && search <= "9" ){
+//     console.log(search.charCodeAt() + " " + "is number")
+// }
+// else{
+//     console.log(search.charCodeAt() + " " + "symbols")
+// }
+var arr = ["ahsan","baloch","karachi","pk"];
+for(var i = 0; i < arr.length  ; i++){
+    if(arr.indexOf("baloch") !== -1){
+        var neww = arr.slice(i , i +  "baloch".length )
+    }console.log(neww)
+    }
