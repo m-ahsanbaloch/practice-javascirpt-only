@@ -439,9 +439,18 @@
 // else{
 //     console.log(search.charCodeAt() + " " + "symbols")
 // }
-var arr = ["ahsan","baloch","karachi","pk"];
-for(var i = 0; i < arr.length  ; i++){
-    if(arr.indexOf("baloch") !== -1){
-        var neww = arr.slice(i , i +  "baloch".length )
-    }console.log(neww)
+var text = "hi this is ahsan baloch from karachi pakistan"
+var check = false
+var search = prompt("enter word to search");
+var chang = prompt("which word would you like to change against " + search)
+for(i = 0 ; i < text.length; i++){
+    if(text.slice(i,i + search.length == search)){
+        check = true
+        neww = text.replace(search, chang)
+        ret = neww
+        console.log(ret)
     }
+}
+if(check == false){
+    console.log("search not found")
+}
