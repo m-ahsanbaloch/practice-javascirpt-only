@@ -439,18 +439,28 @@
 // else{
 //     console.log(search.charCodeAt() + " " + "symbols")
 // }
-var text = "hi this is ahsan baloch from karachi pakistan"
-var check = false
-var search = prompt("enter word to search");
-var chang = prompt("which word would you like to change against " + search)
-for(i = 0 ; i < text.length; i++){
-   if(text.slice(i , i + search.length) == search){
-    check = true;
-    var neww = text.replace(search, chang)
-    ret = neww
-    console.log(ret)
-   }
+// var text = "hi this is ahsan baloch from karachi pakistan"
+// var check = false
+// var search = prompt("enter word to search");
+// var chang = prompt("which word would you like to change against " + search)
+// for(i = 0 ; i < text.length; i++){
+//    if(text.slice(i , i + search.length) == search){
+//     check = true;
+//     var neww = text.replace(search, chang)
+//     ret = neww
+//     console.log(ret)
+//    }
+// }
+// if(check == false){
+//     console.log("search not found")
+// }
+var studentName = prompt("enter student name");
+var myMessage = "not enrolled"
+if (studentName == "ahsan"){
+    myMessage = studentName
 }
-if(check == false){
-    console.log("search not found")
+if(studentName == "baloch"){
+    myMessage = studentName
 }
+// else{alert(myMessage)}
+alert(myMessage) //ager koi condition match na howi tho direct variable ko show kar dega;as else
