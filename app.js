@@ -454,15 +454,28 @@
 // if(check == false){
 //     console.log("search not found")
 // }
-var text = "hi this is ahsan baloch ahsan";
-var search = prompt("which word do you like to search");
-var chang = prompt("which word would you like to change against " + search);
-var check = false;
-for(i = 0; i < text.length; i++){
-   if(text.slice(i , i + search.length) == search){
-    check = true
-    var neww = text.replaceAll(search , chang)
-    console.log(neww)
-   }
+// var text = "hi this is ahsan baloch ahsan";
+// var search = prompt("which word do you like to search");
+// var chang = prompt("which word would you like to change against " + search);
+// var check = false;
+// for(i = 0; i < text.length; i++){
+//    if(text.slice(i , i + search.length) == search){
+//     check = true
+//     var neww = text.replaceAll(search , chang)
+//     console.log(neww)
+//    }
 
+// }
+var text = ["ahsan","baloch"]
+var search = prompt("search word")
+var chang = prompt("change word");
+var check = false
+for(var i = 0 ; i < text.length ; i++){
+   if(text[0].slice(i,i + search) === search){
+      check = true
+      neww = text.toString().replaceAll(search,chang)
+   
+      ret = neww
+      console.log(ret)     
+   }
 }
