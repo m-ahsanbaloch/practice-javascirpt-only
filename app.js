@@ -454,13 +454,15 @@
 // if(check == false){
 //     console.log("search not found")
 // }
-var studentName = prompt("enter student name");
-var myMessage = "not enrolled"
-if (studentName == "ahsan"){
-    myMessage = studentName
+var text = "hi this is ahsan baloch ahsan";
+var search = prompt("which word do you like to search");
+var chang = prompt("which word would you like to change against " + search);
+var check = false;
+for(i = 0; i < text.length; i++){
+   if(text.slice(i , i + search.length) == search){
+    check = true
+    var neww = text.replaceAll(search , chang)
+    console.log(neww)
+   }
+
 }
-if(studentName == "baloch"){
-    myMessage = studentName
-}
-// else{alert(myMessage)}
-alert(myMessage) //ager koi condition match na howi tho direct variable ko show kar dega;as else
