@@ -476,7 +476,7 @@ for(var i = 0; i < text.length; i ++){
          check = true
          var chang = prompt("change word");
          var neww = string.replace(search, chang)
-         ret = string[j]
+         ret = string.split()
          console.log(ret)
       }
       if(check == false){
