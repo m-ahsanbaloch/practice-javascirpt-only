@@ -466,7 +466,7 @@
 //    }
 
 // }
-var text = ["ahsan","baloch"]
+var text = ["hi this is ahsan baloch from karachi","baloch"]
 var search = prompt("search word")
 var check = false
 for(var i = 0; i < text.length; i ++){
@@ -474,13 +474,27 @@ for(var i = 0; i < text.length; i ++){
    for(j = 0 ; j < string.length; j++ ) {
       if(string.slice(j,j + search.length) === search){
          check = true
-         var chang = prompt("change word");
-         var neww = string.replace(search, chang)
-         ret = string.split()
-         console.log(ret)
+         // var neww = string.replace(search, chang)
+         ret = string.toString()
+         
+         for(k = 0 ; k < ret.length ; k++){
+            if(ret.slice(k , k + search.length) === search){
+               var chang = prompt("change word");
+               var con = ret.replace(search,chang)
+               console.log(con)
+            }
       }
-      if(check == false){
-         console.log("wronge entry")
       }
    }
+   if(check == false){
+      console.log("wronge entry")
+   }
 }
+
+// var num = +prompt("enter your number ");
+// if(num % 3 === 0  && num % 5 === 0 ){
+//    console.log("number is divisble with 3 and five")
+// }
+// else{
+//    console.log("this number is not divisble with 3 and 5");
+// }
