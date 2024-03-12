@@ -468,14 +468,19 @@
 // }
 var text = ["ahsan","baloch"]
 var search = prompt("search word")
-var chang = prompt("change word");
 var check = false
-for(var i = 0 ; i < text.length ; i++){
-   if(text[0].slice(i,i + search) === search){
-      check = true
-      neww = text.toString().replaceAll(search,chang)
-   
-      ret = neww
-      console.log(ret)     
+for(var i = 0; i < text.length; i ++){
+   var string = text[i];
+   for(j = 0 ; j < string.length; j++ ) {
+      if(string.slice(j,j + search.length) === search){
+         check = true
+         var chang = prompt("change word");
+         var neww = string.replace(search, chang)
+         ret = string[j]
+         console.log(ret)
+      }
+      if(check == false){
+         console.log("wronge entry")
+      }
    }
 }
