@@ -466,24 +466,29 @@
 //    }
 
 // }
-var text = ["hi this is ahsan baloch from karachi","baloch"]
-var search = prompt("search word")
-var check = false
-for(i = 0; i < text.length; i++){
-   text = text[i]
-   for(j = 0; j < text.length; j++ ) {
-      check = true
-      text = text.toString()
-      for(k = 0 ;k < text.length;k++){
-         if(text.slice(k,k + search.length) === search){
-            check = true
-            var chang = prompt("which word would you like to change against " + " " + search)
-            text = text.replace(search , chang)
-            console.log(text)
-         }
-      }
-}
-}
+// var text = ["hi this is ahsan baloch from karachi","baloch"]
+// var search = prompt("search word")
+// var check = false
+// for(i = 0; i < text.length; i++){
+//    text = text[i]
+//    for(j = 0; j < text.length; j++ ) {
+//       check = true
+//       text = text.toString()
+//       for(k = 0 ;k < text.length;k++){
+//          if(text.slice(k,k + search.length) === search){
+//             check = true
+//             var chang = prompt("which word would you like to change against " + " " + search)
+//             text = text.replace(search , chang)
+//             console.log(text)
+//          }
+//       }
+// }
+// }
+// var  ism = "baloch"
+// var neww = ism.slice(0,1)
+// neww = neww.toUpperCase();
+// var fName = neww + ism.slice(1)
+// console.log(fName)
 
 // var num = +prompt("enter your number ");
 // if(num % 3 === 0  && num % 5 === 0 ){
