@@ -469,26 +469,20 @@
 var text = ["hi this is ahsan baloch from karachi","baloch"]
 var search = prompt("search word")
 var check = false
-for(var i = 0; i < text.length; i ++){
-   var string = text[i];
-   for(j = 0 ; j < string.length; j++ ) {
-      if(string.slice(j,j + search.length) === search){
-         check = true
-         // var neww = string.replace(search, chang)
-         ret = string.toString()
-         
-         for(k = 0 ; k < ret.length ; k++){
-            if(ret.slice(k , k + search.length) === search){
-               var chang = prompt("change word");
-               var con = ret.replace(search,chang)
-               console.log(con)
-            }
+for(i = 0; i < text.length; i++){
+   text = text[i]
+   for(j = 0; j < text.length; j++ ) {
+      check = true
+      text = text.toString()
+      for(k = 0 ;k < text.length;k++){
+         if(text.slice(k,k + search.length) === search){
+            check = true
+            var chang = prompt("which word would you like to change against " + " " + search)
+            text = text.replace(search , chang)
+            console.log(text)
+         }
       }
-      }
-   }
-   if(check == false){
-      console.log("wronge entry")
-   }
+}
 }
 
 // var num = +prompt("enter your number ");
