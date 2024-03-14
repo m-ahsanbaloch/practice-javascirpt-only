@@ -511,5 +511,20 @@ var maths = +prompt("enter your Maths obtained marks");
 var urdu = +prompt("enter your urdu obtained marks");
 var psx = +prompt("enter your psx obtained marks");
 var cs = +prompt("enter your cs obtained marks");
-var total = eng + maths + urdu + psx + cs / 400 * 100 
-console.log(total)
+var total = eng + maths + urdu + psx + cs  
+total = (total / 500 * 100)
+document.write(`<table border="1px">
+<tr>
+<th>
+Student Name
+</th>
+<th>
+
+</th>
+</tr>
+<tr>
+<td>
+${sName}
+</td>
+</tr>
+</table>`)
