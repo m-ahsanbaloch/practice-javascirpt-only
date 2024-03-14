@@ -497,12 +497,9 @@
 // else{
 //    console.log("this number is not divisble with 3 and 5");
 // }
-var arr =  ["ahsan","baloch","karachi"];
-for(i = 0 ; i < arr.length ; i++){
-    neww  = arr.splice(0,1,"ahsanaaa")
-    console.log(neww)
-    for(j = 0 ; j < arr[i].length; j++){
-        console.log(arr[j])
-    }
-}
+
 // console.log(neww)
+
+var fName = prompt("first name");
+var lName = prompt("last name");
+document.write(`first name is ${fName} </br> Last Name is ${lName} </br> again name is ${fName} </br> This is javascript Mr. ${fName} ${lName}`)
