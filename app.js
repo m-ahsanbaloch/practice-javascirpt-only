@@ -500,6 +500,16 @@
 
 // console.log(neww)
 
-var fName = prompt("first name");
-var lName = prompt("last name");
-document.write(`first name is ${fName} </br> Last Name is ${lName} </br> again name is ${fName} </br> This is javascript Mr. ${fName} ${lName}`)
+// var fName = prompt("first name");
+// var lName = prompt("last name");
+// document.write(`first name is ${fName} </br> Last Name is ${lName} </br> again name is ${fName} </br> This is javascript Mr. ${fName} ${lName}`)
+
+
+var sName = prompt("enter your name");
+var eng = +prompt("enter your english obtained marks");
+var maths = +prompt("enter your Maths obtained marks");
+var urdu = +prompt("enter your urdu obtained marks");
+var psx = +prompt("enter your psx obtained marks");
+var cs = +prompt("enter your cs obtained marks");
+var total = eng + maths + urdu + psx + cs / 400 * 100 
+console.log(total)
