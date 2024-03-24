@@ -508,7 +508,8 @@
 // var race = ["earth","race"];
 var race = ["race", "earth"];
 for(i = race.length -1 ; i > -1 ; i--) {
+    race = race.reverse()
     console.log("yes it is anagram"+ " " + race[i])
-    // if(race  == "care"){
-    // }
+    if(race[i]  == "care"){
+    }
 }
