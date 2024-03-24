@@ -505,26 +505,10 @@
 // document.write(`first name is ${fName} </br> Last Name is ${lName} </br> again name is ${fName} </br> This is javascript Mr. ${fName} ${lName}`)
 
 
-var sName = prompt("enter your name");
-var eng = +prompt("enter your english obtained marks");
-var maths = +prompt("enter your Maths obtained marks");
-var urdu = +prompt("enter your urdu obtained marks");
-var psx = +prompt("enter your psx obtained marks");
-var cs = +prompt("enter your cs obtained marks");
-var total = eng + maths + urdu + psx + cs  
-total = (total / 500 * 100)
-document.write(`<table border="1px">
-<tr>
-<th>
-Student Name
-</th>
-<th>
-
-</th>
-</tr>
-<tr>
-<td>
-${sName}
-</td>
-</tr>
-</table>`)
+// var race = ["earth","race"];
+var race = ["race", "earth"];
+for(i = race.length -1 ; i > -1 ; i--) {
+    console.log("yes it is anagram"+ " " + race[i])
+    // if(race  == "care"){
+    // }
+}
