@@ -548,10 +548,17 @@
 //   document.write(`${nuser} Not found`)
 // }
 
-var arr=["mr"];
-var arr2 = ["ahsan","baloch,","balllllll"]
-for(i = 0 ; i <arr.length;i++){
-    for(j = 0; j< arr2.length;j++){
-        document.write(arr[i] + " " + arr2[j] +"<br>")
+// var arr=["mr"];
+// var arr2 = ["ahsan","baloch,","balllllll"]
+// for(i = 0 ; i <arr.length;i++){
+//     for(j = 0; j< arr2.length;j++){
+//         document.write(arr[i] + " " + arr2[j] +"<br>")
+//     }
+// }
+
+for(i = 1; i <= 100; i= i + 10){
+    for(j = i; j< i+10;j++){
+        document.write(j + " ")
     }
+    document.write("<br>")
 }
