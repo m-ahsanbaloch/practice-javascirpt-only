@@ -513,8 +513,8 @@
 // }
 
 for (i = 1; i <= 5; i++) {
-  for (j = 5; j >= 1; j--) {
+  for (j = i; j >= 1; j--) {
     document.write(j);
   }
-  document.write("<br>");
+  document.write("</br>");
 }
