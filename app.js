@@ -229,7 +229,6 @@
 // //   }
 // //   // console.log() ;
 
-
 // //   var newInput = (value += input);
 // //   // newInput += newInput + input.length -1
 
@@ -254,11 +253,11 @@
 // }
 // function clear(){
 //   cleann = input.value = ''
-//   input.value = cleann 
+//   input.value = cleann
 // }
 // var text = "hi this is ahsan baloch"
 // var search = prompt("enter which word you like to search");
-// var check = false 
+// var check = false
 // for(i = 0 ; i < text.length; i++){
 //   var found = text.slice(i,i + search.length)
 //   if(found === search){
@@ -267,7 +266,7 @@
 //   }
 // } if(check == false){
 //   console.log(search + " "+ "not found")
-// } 
+// }
 
 // var text = "hi this is ahsan baloch from karachi pakistan"
 // var search = prompt("enter which word would you like to search ")
@@ -336,7 +335,7 @@
 //     if(screen.indexOf("+") !== -1){
 //        var neww = input.value.slice(0,1)
 //        console.log(neww)
-        
+
 //     }
 //     console.log(screen.slice(0,1))
 //     return screen
@@ -346,7 +345,7 @@
 //     if(screen.indexOf("*") !== -1){
 //        var neww1 = input.value.slice(0,1)
 //        console.log(neww1)
-        
+
 //     }
 //     console.log(screen.slice(0,1))
 //     return screen
@@ -356,7 +355,7 @@
 //     if(screen.indexOf("2") !== -1){
 //        var neww2 = input.value.slice(0,1)
 //        console.log(neww2)
-        
+
 //     }
 //     // console.log(screen.slice(0,1))
 //     return screen
@@ -372,7 +371,7 @@
 //     var clear = input.value = ""
 //     console.log(clear)
 //  }
- 
+
 // }
 
 // var num1 = +prompt("enter first number")
@@ -504,12 +503,18 @@
 // var lName = prompt("last name");
 // document.write(`first name is ${fName} </br> Last Name is ${lName} </br> again name is ${fName} </br> This is javascript Mr. ${fName} ${lName}`)
 
-
 // var race = ["earth","race"];
-var race = ["race", "earth"];
-for(i = race.length -1 ; i > -1 ; i--) {
-    race = race.reverse()
-    console.log("yes it is anagram"+ " " + race[i])
-    if(race[i]  == "care"){
-    }
+// var race = ["race", "earth"];
+// for(i = race.length -1 ; i > -1 ; i--) {
+//     race = race.reverse()
+//     console.log("yes it is anagram"+ " " + race[i])
+//     if(race[i]  == "care"){
+//     }
+// }
+
+for (i = 1; i <= 5; i++) {
+  for (j = 5; j >= 1; j--) {
+    document.write(j);
+  }
+  document.write("<br>");
 }
