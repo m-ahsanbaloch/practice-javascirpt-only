@@ -512,9 +512,22 @@
 //     }
 // }
 
-for (i = 1; i <= 5; i++) {
-  for (j = i; j >= 1; j--) {
-    document.write(j);
-  }
-  document.write("</br>");
+// for (i = 1; i <= 5; i++) {
+//   for (j = i; j >= 1; j--) {
+//     document.write(j);
+//   }
+//   document.write("</br>");
+// }
+
+var arr = ["civic","madam","radar"];
+var user = prompt("enter to search palindrome words");
+var check = false
+for(i = 0;i < arr.length;i++){
+if(user === arr[i]){
+  check = true
+  document.write(`yes ${user} is palindrome`)
+}
+}
+if(check === false){
+  document.write(`no ${user} is not palindrome`)
 }
