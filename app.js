@@ -547,3 +547,11 @@
 // if(check === false){
 //   document.write(`${nuser} Not found`)
 // }
+
+var arr=["mr"];
+var arr2 = ["ahsan","baloch,","balllllll"]
+for(i = 0 ; i <arr.length;i++){
+    for(j = 0; j< arr2.length;j++){
+        document.write(arr[i] + " " + arr2[j] +"<br>")
+    }
+}
