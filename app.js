@@ -556,9 +556,18 @@
 //     }
 // }
 
-for(i = 1; i <= 100; i= i + 10){
-    for(j = i; j< i+10;j++){
-        document.write(j + " ")
+// for(i = 1; i <= 100; i= i + 10){
+//     for(j = i; j< i+10;j++){
+//         document.write(j + " ")
+//     }
+//     document.write("<br>")
+// }
+
+var arr = [3,5,4,2,7,9,11,44]
+var min = arr[0]
+for(i = 0; i < arr.length;i++){
+    if(arr[i] < min){
+        min = arr[i]
     }
-    document.write("<br>")
+    document.write(min+"<br>");
 }
