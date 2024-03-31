@@ -576,6 +576,6 @@ function abc(a,b){
     
      var a = a
      var b = b
-     return a + b
+     return `${a} ${b}`
 }
-alert(abc("hello","Jan"))
+alert(abc(prompt("enter first name"),prompt("enter last name")))
