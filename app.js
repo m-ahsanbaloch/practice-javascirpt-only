@@ -563,11 +563,19 @@
 //     document.write("<br>")
 // }
 
-var arr = [3,5,4,2,7,9,11,44]
-var min = arr[0]
-for(i = 0; i < arr.length;i++){
-    if(arr[i] < min){
-        min = arr[i]
-    }
-    document.write(min+"<br>");
+// var arr = [3,5,4,2,7,9,11,44]
+// var min = arr[0]
+// for(i = 0; i < arr.length;i++){
+//     if(arr[i] < min){
+//         min = arr[i]
+//     }
+//     document.write(min+"<br>");
+// }
+
+function abc(a,b){
+    
+     var a = a
+     var b = b
+     return a + b
 }
+alert(abc("hello","Jan"))
