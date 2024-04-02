@@ -589,3 +589,8 @@ function calc(screen){
    console.log(screen)
      
 }
+function equal(){
+ var calculation = document.getElementById('input') ;
+ calculation.value =  eval(calculation.value);
+   
+}
