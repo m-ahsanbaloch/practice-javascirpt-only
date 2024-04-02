@@ -603,7 +603,9 @@ function equal(){
    var calculation = document.getElementById('input');
    calculation.value = eval(calculation.value)
 }
-function clear(){
-   var clear = document.getElementById('input').value
+function clear(value){
+   var clear = document.getElementById('input')
+   clear.value = value
+   
    
 }
