@@ -572,14 +572,20 @@
 //     document.write(min+"<br>");
 // }
 
-var text = "hi this is hasan baloch"
-var check = false
-for(i = 0; i <  text.length; i++ ){
-     if(text.slice(i,i + "hasan".length) === "hasan"){
-          check = true
-          document.write(`found hasan <br>`)
-          neww = text.replace("hasan","ahsan".toUpperCase())
-          document.write(neww)
+// var text = "hi this is hasan baloch"
+// var check = false
+// for(i = 0; i <  text.length; i++ ){
+//      if(text.slice(i,i + "hasan".length) === "hasan"){
+//           check = true
+//           document.write(`found hasan <br>`)
+//           neww = text.replace("hasan","ahsan".toUpperCase())
+//           document.write(neww)
 
-     }
+//      }
+// }
+
+function calc(screen){
+   document.getElementById('input').value += screen
+   console.log(screen)
+     
 }
