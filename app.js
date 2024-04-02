@@ -572,10 +572,14 @@
 //     document.write(min+"<br>");
 // }
 
-function abc(a,b){
-    
-     var a = a
-     var b = b
-     return `${a} ${b}`
+var text = "hi this is hasan baloch"
+var check = false
+for(i = 0; i <  text.length; i++ ){
+     if(text.slice(i,i + "hasan".length) === "hasan"){
+          check = true
+          document.write(`found hasan <br>`)
+          neww = text.replace("hasan","ahsan".toUpperCase())
+          document.write(neww)
+
+     }
 }
-alert(abc(prompt("enter first name"),prompt("enter last name")))
