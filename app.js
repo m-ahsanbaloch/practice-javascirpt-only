@@ -604,7 +604,7 @@ function equal(){
    calculation.value = eval(calculation.value)
 }
 function clear(){
- del = document.getElementById('input').value
+ input = document.getElementById('input').value
    // clear.value =  ""
 del +=""
    
