@@ -595,17 +595,26 @@
    
 // }
 
-function calc(screen){
-   document.getElementById('input').value += screen
+// function calc(screen){
+//    document.getElementById('input').value += screen
    
-}
-function equal(){
-   var calculation = document.getElementById('input');
-   calculation.value = eval(calculation.value)
-}
-function clear(value){
-   var clear = document.getElementById('input')
-   clear.value = value
+// }
+// function equal(){
+//    var calculation = document.getElementById('input');
+//    calculation.value = eval(calculation.value)
+// }
+// function clear(value){
+//    var clear = document.getElementById('input')
+//    clear.value = value
    
    
+// }
+
+var arr = [2,7,0,5,9,11]
+var min = arr[0];
+for(i = 0; i < arr.length ;i++){
+   if(arr[i] < min ) {
+      min = arr[i]
+   }
 }
+console.log(min)
