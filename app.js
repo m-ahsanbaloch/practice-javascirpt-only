@@ -611,11 +611,13 @@ function equal(){
    var calculation = document.getElementById('input');
    calculation.value = eval(calculation.value)
 }
+var neww = document.getElementById('input').value.slice(input.length -1)
+console.log(neww)
 function c(){
-   var inp  = document.getElementById('input').value
-   var neww = inp.slice(0,-1) 
-   neww += eval(neww) 
+    document.getElementById('input').value = neww.value
+   // var neww = inp.slice(0,-1) 
+   // inp =  '' 
    // inp.value += inp.value 
-   console.log(neww)
+   // console.log(ne+ww)
 }
 
