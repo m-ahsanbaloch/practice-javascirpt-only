@@ -612,8 +612,10 @@ function equal(){
    calculation.value = eval(calculation.value)
 }
 function c(){
-   var inp  = document.getElementById('input').value.slice(0,-1)
-   inp.value += inp.value 
-   console.log(inp)
+   var inp  = document.getElementById('input').value
+   var neww = inp.slice(0,-1) 
+   neww += eval(neww) 
+   // inp.value += inp.value 
+   console.log(neww)
 }
 
