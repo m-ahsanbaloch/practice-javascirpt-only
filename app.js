@@ -613,7 +613,6 @@ function equal(){
 }
 function c(){
    var inp  = document.getElementById('input').value
-   inp.slice(inp.value.slice(-1)) 
    console.log(inp)
 }
 
