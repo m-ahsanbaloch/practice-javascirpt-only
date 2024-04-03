@@ -599,14 +599,21 @@ function calc(screen){
    document.getElementById('input').value += screen 
    
 }
+function clearr(){
+  var input = document.getElementById('input')
+   // clear.value =  ""
+input.value = ''
+console.log(input.value)
+
+   
+}
 function equal(){
    var calculation = document.getElementById('input');
    calculation.value = eval(calculation.value)
 }
-function clear(){
- input = document.getElementById('input').value
-   // clear.value =  ""
-del +=""
-   
+function c(){
+   var inp  = document.getElementById('input').value
+   inp.slice(inp.value.slice(-1)) 
+   console.log(inp)
 }
 
