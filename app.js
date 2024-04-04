@@ -613,9 +613,9 @@ function equal(){
 }
 
 function c(){
-   var input =  document.getElementById('input').value.slice(0,-1) 
-   var neww = input
-   var result = neww
-   console.log(result)
+   var input =  document.getElementById('input').value 
+   var neww = input.slice(0,-1)
+  input = neww
+   console.log(input.value)
 }
 
