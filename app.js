@@ -611,13 +611,14 @@ function equal(){
    var calculation = document.getElementById('input');
    calculation.value = eval(calculation.value)
 }
-var neww = document.getElementById('input').value.slice(input.length -1)
-console.log(neww)
+// var neww = document.getElementById('input').value.slice(input.length -1)
+// console.log(neww)
 function c(){
-    document.getElementById('input').value = neww.value
-   // var neww = inp.slice(0,-1) 
-   // inp =  '' 
+   var input =  document.getElementById('input').value.slice(0,-1) 
+   var neww = input
+   var result = neww
+   result = result.value
    // inp.value += inp.value 
-   // console.log(ne+ww)
+   console.log(result)
 }
 
