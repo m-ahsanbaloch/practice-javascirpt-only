@@ -614,14 +614,13 @@ function equal(){
 
 function c1(){
    var input =  document.getElementById('input').value
-   // var neww = input.slice(0,-1)
-   // console.log(neww)
+ 
    var check = false
    for(i = 0;i < input.length; i++){
       check = true
-      // console.log(input)
-      input.replace(input.slice(0,-1),"")
-      console.log(document.getElementById('input').value = input)
+      var newly = input.replace(input.slice(0,1),"")
+      document.getElementById('input').value = newly
+      console.log(newly)
    }
 }
 
