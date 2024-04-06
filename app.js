@@ -596,31 +596,17 @@
 // }
 
 function calc(screen){
-   document.getElementById('input').value += screen 
-   
-}
-function clearr(){
-  var input = document.getElementById('input')
-   // clear.value =  ""
-input.value = ''
-console.log(input.value)
-
-   
+   document.getElementById('input').value += screen
 }
 function equal(){
-   var calculation = document.getElementById('input');
+   // document.getElementById('input')
+   var calculation = document.getElementById('input')
    calculation.value = eval(calculation.value)
-}
-
-function c1(){
-   var input =  document.getElementById('input').value
- 
-   var check = false
-   for(i = 0;i < input.length; i++){
-      check = true
-      var newly = input.replace(input.slice(0,1),"")
-      document.getElementById('input').value = newly
-      console.log(newly)
    }
+   function clearr(){
+      document.getElementById('input').value = ''
+   }
+function c1(){
+   var input = document.getElementById('input').value
+   for(i = 0 i <)
 }
- 
