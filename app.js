@@ -595,24 +595,44 @@
    
 // }
 
-function calc(screen){
-   document.getElementById('input').value += screen
+
+
+// ****************** CALCULATOR ******************
+// function calc(screen){
+//    document.getElementById('input').value += screen
+// }
+// function equal(){
+//    // document.getElementById('input')
+//    var calculation = document.getElementById('input')
+//    calculation.value = eval(calculation.value)
+//    }
+//    function clearr(){
+//       document.getElementById('input').value = ''
+//    }
+// function c1(){
+//    var input = document.getElementById('input').value
+//    var check = false
+//    for(i = 0 ;i < input.length;i++){
+//        check = true
+//       var newly = input.replace(input.slice(-1),'')
+//       // console.log(neww)
+//       document.getElementById('input').value = newly
+//    }
+// }
+// ***************** CALCULATOR END ******************
+
+var text = "hi this is ahsan baloch from karachi pakistan"
+var search = prompt("enter word to search")
+var check = false
+for(i = 0; i < text.length;i++){
+   if(text.indexOf(search) !== -1){
+      check = true
+      var change = prompt(`yes ${search} Found.. what would you like to change against ${search}`)
+      var remake = text.replace(search,change)
+      document.write(remake)
+      break
+   }
 }
-function equal(){
-   // document.getElementById('input')
-   var calculation = document.getElementById('input')
-   calculation.value = eval(calculation.value)
-   }
-   function clearr(){
-      document.getElementById('input').value = ''
-   }
-function c1(){
-   var input = document.getElementById('input').value
-   var check = false
-   for(i = 0 ;i < input.length;i++){
-       check = true
-      var newly = input.replace(input.slice(-1),'')
-      // console.log(neww)
-      document.getElementById('input').value = newly
-   }
+if(check === false){
+   document.write(`sorry This Word is not here`)
 }
