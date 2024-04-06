@@ -610,9 +610,9 @@ function c1(){
    var input = document.getElementById('input').value
    var check = false
    for(i = 0 ;i < input.length;i++){
-      var check = true
-      var neww = input.replace(input.slice(-1),'')
-      console.log(neww)
-      document.getElementById('input').value = neww
+       check = true
+      var newly = input.replace(input.slice(-1),'')
+      // console.log(neww)
+      document.getElementById('input').value = newly
    }
 }
