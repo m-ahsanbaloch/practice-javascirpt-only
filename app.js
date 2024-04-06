@@ -608,5 +608,11 @@ function equal(){
    }
 function c1(){
    var input = document.getElementById('input').value
-   for(i = 0 i <)
+   var check = false
+   for(i = 0 ;i < input.length;i++){
+      var check = true
+      var neww = input.replace(input.slice(-1),'')
+      console.log(neww)
+      document.getElementById('input').value = neww
+   }
 }
