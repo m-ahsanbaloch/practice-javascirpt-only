@@ -632,5 +632,14 @@
 // }
 
 var anagram = "heart"
-anagram = anagram.split('').reverse('')
-document.write(anagram)
+reversse = anagram.split('').reverse('').join('')
+// console.log(reversse)
+for(i = reversse.length; i < 0;i--){
+console.log(reversse)
+}
+// var check = false
+// if(anagram === reversse){
+//    check = true
+//    document.write(`yes it is anagramic`)
+// }
+// document.write(anagram)
