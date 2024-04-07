@@ -631,16 +631,3 @@
 //    document.write(`sorry only accept monday to sunday`)
 // }
 
-var anagram = "heart"
-var reversse = anagram.split('').reverse('').join('')
-var check = false
-// console.log(reversse)
-for(i = reversse.length -1; i > -1 ; i--){
-   // reversse = reversse
-console.log(reversse[i])
-if(anagram == reversse[i].toString()){
-   // check = true
-   document.write(`yes it is anagramic`)
-}
-}
-// document.write(anagram)
