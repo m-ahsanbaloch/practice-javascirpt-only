@@ -621,18 +621,4 @@
 // }
 // ***************** CALCULATOR END ******************
 
-var text = "hi this is ahsan baloch from karachi pakistan"
-var search = prompt("enter word to search")
-var check = false
-for(i = 0; i < text.length;i++){
-   if(text.indexOf(search) !== -1){
-      check = true
-      var change = prompt(`yes ${search} Found.. what would you like to change against ${search}`)
-      var remake = text.replace(search,change)
-      document.write(remake)
-      break
-   }
-}
-if(check === false){
-   document.write(`sorry This Word is not here`)
-}
+var days = prompt("enter day to see reacion")
