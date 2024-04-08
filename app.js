@@ -620,6 +620,7 @@
 //    }
 // }
 // ***************** CALCULATOR END ******************
-
-var arr = ["tuesday","monday"]
-document.write(arr[1])
+var days = prompt("enter day you want to greetings")
+switch(days){
+    
+}
