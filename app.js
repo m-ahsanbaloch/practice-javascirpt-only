@@ -649,8 +649,3 @@
 //         document.write(`enter days names only`);
 // }
 
-var i = 1 
-do{
-    console.log(i);
-    i++;
-} while(i <= 10)
