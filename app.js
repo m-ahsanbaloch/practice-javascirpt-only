@@ -635,5 +635,14 @@ switch (days) {
     case "friday":
         document.write(`Today is Good Prayday`)
         break
-        
+        case "saturday":
+        document.write(`Its Weekend Enjoy your self`)
+        break
+    case "sunday":
+        document.write(`it is funday yahooooo`)
+        break
+}
+switch(days){
+    default:
+        document.write(`enter days names only`);
 }
