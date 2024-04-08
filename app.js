@@ -621,13 +621,5 @@
 // }
 // ***************** CALCULATOR END ******************
 
-// var days = prompt("enter day to see reacion")
-// switch(days){
-//    case "monday":
-//       document.write(`yeaa its workday`)
-// }
-// switch(days){
-//    default :
-//    document.write(`sorry only accept monday to sunday`)
-// }
-
+var arr = ["tuesday","monday"]
+document.write(arr[1])
