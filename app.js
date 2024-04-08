@@ -649,9 +649,6 @@
 //         document.write(`enter days names only`);
 // }
 
-var arr = [["ahsan"],["baloch"]]
-for(i = 0 ; i < arr.length; i++){
-    for(j = 0;j < arr[i].length;j++){
-        document.write(`${arr[i]} `)
-    }
+for(i = 1 ; i <= 10;i++){
+    document.write(i)
 }
