@@ -618,31 +618,33 @@
 //    }
 // }
 // ***************** CALCULATOR END ******************
-var days = prompt("enter day you want to greetings");
-switch (days) {
-  case "monday":
-    document.write("ohh its is work day");
-    break;
-  case "tuesday":
-    document.write(`ohh this is boring day`);
-    break;
-  case "wednesday":
-    document.write(`its a good day, keep going!`);
-    break;
-    case "thursday":
-    document.write(`oyee jumeraat ayega`)
-    break
-    case "friday":
-        document.write(`Today is Good Prayday`)
-        break
-        case "saturday":
-        document.write(`Its Weekend Enjoy your self`)
-        break
-    case "sunday":
-        document.write(`it is funday yahooooo`)
-        break
-}
-switch(days){
-    default:
-        document.write(`enter days names only`);
-}
+// var days = prompt("enter day you want to greetings");
+// switch (days) {
+//   case "monday":
+//     document.write("ohh its is work day");
+//     break;
+//   case "tuesday":
+//     document.write(`ohh this is boring day`);
+//     break;
+//   case "wednesday":
+//     document.write(`its a good day, keep going!`);
+//     break;
+//     case "thursday":
+//     document.write(`oyee jumeraat ayega`)
+//     break
+//     case "friday":
+//         document.write(`Today is Good Prayday`)
+//         break
+//         case "saturday":
+//         document.write(`Its Weekend Enjoy your self`)
+//         break
+//     case "sunday":
+//         document.write(`it is funday yahooooo`)
+//         break
+//     default:
+//         document.write(`enter days names only`)
+//     }
+// switch(days){
+//     default:
+//         document.write(`enter days names only`);
+// }
