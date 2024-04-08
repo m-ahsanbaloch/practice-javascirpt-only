@@ -587,15 +587,13 @@
 // function calc(screen){
 //    document.getElementById('input').value += screen
 //    console.log(screen)
-     
+
 // }
 // function equal(){
 //  var calculation = document.getElementById('input') ;
 //  calculation.value =  eval(calculation.value);
-   
+
 // }
-
-
 
 // ****************** CALCULATOR ******************
 // function calc(screen){
@@ -620,7 +618,22 @@
 //    }
 // }
 // ***************** CALCULATOR END ******************
-var days = prompt("enter day you want to greetings")
-switch(days){
-    
+var days = prompt("enter day you want to greetings");
+switch (days) {
+  case "monday":
+    document.write("ohh its is work day");
+    break;
+  case "tuesday":
+    document.write(`ohh this is boring day`);
+    break;
+  case "wednesday":
+    document.write(`its a good day, keep going!`);
+    break;
+    case "thursday":
+    document.write(`oyee jumeraat ayega`)
+    break
+    case "friday":
+        document.write(`Today is Good Prayday`)
+        break
+        
 }
