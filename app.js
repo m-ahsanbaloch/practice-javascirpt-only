@@ -649,15 +649,24 @@
 //         document.write(`enter days names only`);
 // }
 
-var arr = ["civic","madam","radar","level"];
-var user = prompt("enter to search palindrome words");
-var check = false
-for(i = 0 ; i < arr.length ;i++){
-    if(user === arr[i]){
-        check = true
-        document.write(`Yes ${user} Is Palindrome`)
+// var arr = ["civic","madam","radar","level"];
+// var user = prompt("enter to search palindrome words");
+// var check = false
+// for(i = 0 ; i < arr.length ;i++){
+//     if(user === arr[i]){
+//         check = true
+//         document.write(`Yes ${user} Is Palindrome`)
+//     }
+// }
+// if(check === false){
+//     document.write(`no ${user} is not palindrom`)
+// }
+
+var arr = [11,4,5,6,7,8,9,1]
+var min = arr[0]
+for(i = 0; i < arr.length;i++){
+    if(arr[i] > min){
+        min = arr[i]
     }
 }
-if(check === false){
-    document.write(`no ${user} is not palindrom`)
-}
+console.log(min)
