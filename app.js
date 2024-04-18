@@ -649,3 +649,19 @@
 //         document.write(`enter days names only`);
 // }
 
+// var palindrome = prompt("sf");
+// var reverse = palindrome.split('').reverse('').join('').toString()
+// console.log(palindrome)
+// console.log(reverse)
+
+
+// for(i = 0 ; i < palindrome.length;i++){
+//     var neww = palindrome[i].split('').join('').slice(0)
+//     var newwone = neww
+//     console.log(newwone)
+// }
+
+var palindrome = ["ahsan","level"]
+for(i = 0;i < palindrome.length; i++){
+
+}
