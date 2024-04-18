@@ -649,19 +649,15 @@
 //         document.write(`enter days names only`);
 // }
 
-// var palindrome = prompt("sf");
-// var reverse = palindrome.split('').reverse('').join('').toString()
-// console.log(palindrome)
-// console.log(reverse)
-
-
-// for(i = 0 ; i < palindrome.length;i++){
-//     var neww = palindrome[i].split('').join('').slice(0)
-//     var newwone = neww
-//     console.log(newwone)
-// }
-
-var palindrome = ["ahsan","level"]
-for(i = 0;i < palindrome.length; i++){
-
+var arr = ["civic","madam","radar","level"];
+var user = prompt("enter to search palindrome words");
+var check = false
+for(i = 0;i < arr.length;i++){
+if(user === arr[i]){
+  check = true
+  document.write(`yes ${user} is palindrome`)
+}
+}
+if(check === false){
+  document.write(`no ${user} is not palindrome`)
 }
