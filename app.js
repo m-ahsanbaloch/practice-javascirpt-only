@@ -662,11 +662,12 @@
 //     document.write(`no ${user} is not palindrom`)
 // }
 
-var arr = [11,4,5,6,7,8,9,1]
+var arr = [0,11,4,5,6,7,8,9,1]
 var min = arr[0]
 for(i = 0; i < arr.length;i++){
-    if(arr[i] > min){
+    if(arr[i] < min){
         min = arr[i]
+        console.log(arr[i])
     }
 }
 console.log(min)
