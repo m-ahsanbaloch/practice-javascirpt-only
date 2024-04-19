@@ -671,5 +671,9 @@
 // }
 // console.log(min)
 
-var arr = "ahsan"
-console.log(arr[arr.length -1])
+var str = "5+5-"
+var last = str[str.length -1];
+var arr = ["+","-","/"]
+if(arr.indexOf(last) !== -1){
+    console.log("yes it is in")
+}
