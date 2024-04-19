@@ -662,11 +662,14 @@
 //     document.write(`no ${user} is not palindrom`)
 // }
 
-var myarr = [3,2,5,6,7,11]
-var min = myarr[0]
-for(i = 0 ; i < myarr.length ; i++){
-    if(myarr[i] > min){
-        min = myarr[i]
-    }
-}
-console.log(min)
+// var myarr = [3,2,5,6,7,11]
+// var min = myarr[0]
+// for(i = 0 ; i < myarr.length ; i++){
+//     if(myarr[i] > min){
+//         min = myarr[i]
+//     }
+// }
+// console.log(min)
+
+var arr = "ahsan"
+console.log(arr[arr.length -1])
