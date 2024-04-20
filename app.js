@@ -662,6 +662,22 @@
 //     document.write(`no ${user} is not palindrom`)
 // }
 
+// var str = "5+5-"
+// var last = str[str.length -1];
+// var arr = ["+","-","/"]
+// if(arr.indexOf(last) !== -1){
+//     console.log("yes it is in")
+// }
+
+// var user = prompt("enter word to search palindrome");
+// var arr = [];
+// for (i = user.length - 1; i >= 0; i--) {
+//   arr += user[i];
+// }
+// if (user == arr) {
+//   document.write("yes it is palindrome");
+// }
+
 // var myarr = [3,2,5,6,7,11]
 // var min = myarr[0]
 // for(i = 0 ; i < myarr.length ; i++){
@@ -671,9 +687,9 @@
 // }
 // console.log(min)
 
-var str = "5+5-"
-var last = str[str.length -1];
-var arr = ["+","-","/"]
-if(arr.indexOf(last) !== -1){
-    console.log("yes it is in")
+var arr = [1,2,3,4,6,7,8,9,10]
+for(var i = 0; i < arr.length;i++){
+if(arr[i +1] - arr[i] === 2){
+    console.log(arr[i]+1)
+}
 }
