@@ -722,10 +722,49 @@
 // document.write(`${min} is minimist number`)
 
 ///// missing number /////
-var arr = [2,3,4,6,7,8,9,11]
-for(var i = 0 ; i < arr.length ; i++){
-    if(arr[i + 1]-arr[i] == 2){
-    console.log(
-        `${arr[i] + 1} is missing number`
-    )}
+// var arr = [2, 3, 4, 8, 9, 11];
+// for (var i = 0; i < arr.length; i++) {
+//   let diff = arr[i + 1] - arr[i];
+//   // debugger
+//   console.log("miss-->", diff);
+//   if (diff > 1) {
+//     for (var j = 1; j < diff; j++) {
+//       console.log("diff-->", arr[i] + j);
+//     }
+//   }
+// }
+
+var miss = [2,5,6,7,8,9]
+for(i = 0; i < miss.length;i++){
+var diff = miss[i + 1] - miss[i] 
+console.log("differnce ===>" ,diff)
+if(diff > 1){
+  for(j = 1; j < diff;j++){
+ console.log("=== >",miss[i] + j)
+  }
 }
+ 
+// if(miss[i + 1] - miss[i] === 2){
+//   console.log("when i reach this number =====>",miss[i])
+
+//   console.log("Missing number =====>",miss[i] + 1)
+// }
+}
+// for (var i = 0; i < 10; i++) {
+//   console.log(i);
+// }
+// var arr = [1, 2, 3, 4, 5, 6, 7, 8];
+
+// arr.forEach((v, i) => {
+//   console.log(arr[i]);
+// });
+
+// var arr = ["ahsan", "ahmed", "najeeb"];
+// arr[2] = [arr[0], (arr[0] = arr[2])][0];
+
+// console.log(arr);
+
+// var arr = ["ahsan", "ahmed", "najeeb"];
+// [a, b, c] = arr;
+
+// console.log(b);
