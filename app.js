@@ -734,22 +734,30 @@
 //   }
 // }
 
-var miss = [2,5,6,7,8,9]
-for(i = 0; i < miss.length;i++){
-var diff = miss[i + 1] - miss[i] 
-console.log("differnce ===>" ,diff)
-if(diff > 1){
-  for(j = 1; j < diff;j++){
- console.log("=== >",miss[i] + j)
-  }
-}
- 
-// if(miss[i + 1] - miss[i] === 2){
-//   console.log("when i reach this number =====>",miss[i])
+// var miss = [2,5,6,7,8,9]
+// for(i = 0; i < miss.length;i++){
+// var diff = miss[i + 1] - miss[i] 
+// console.log("differnce ===>" ,diff)
+// if(diff > 1){
+//   for(j = 1; j < diff;j++){
+// //  console.log()                              ///////////Ahsan 22 4 2024
+// var neww = [miss[i] + j]
 
-//   console.log("Missing number =====>",miss[i] + 1)
+// console.log(neww)
 // }
-}
+// }
+// }
+
+// var missing = [2,4,5,6,7,8]
+// for(var i = 0; i < missing.length; i++){
+//   var diff = 
+//   console.log("====>",diff)
+//   if(missing[i + 1] - missing[i] === 2){
+//   var result = missing[i] + 1 
+// console.log("==== Miss ",result)
+//   }
+// }
+
 // for (var i = 0; i < 10; i++) {
 //   console.log(i);
 // }
