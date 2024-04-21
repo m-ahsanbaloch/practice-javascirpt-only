@@ -713,4 +713,4 @@
 //     check == true
 //     document.write(`yes ${user} is Palindrome`)
 // }
-// else{document.write(`no ${user} is not palindrome`)}
+// else{document.write(`no ${user} is not palindrome`)} 
