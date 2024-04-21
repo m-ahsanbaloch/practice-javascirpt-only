@@ -712,11 +712,20 @@
 // }
 // else{
 //     document.write(`no this is not palindrome`)
-var arr = [5,2,6,9,11,25];
-var min = arr[0]
+// var arr = [5,2,6,9,11,25];
+// var min = arr[0]
+// for(var i = 0 ; i < arr.length ; i++){
+//     if(arr[i] < min){
+//         min = arr[i]
+//     }
+// }
+// document.write(`${min} is minimist number`)
+
+///// missing number /////
+var arr = [2,3,4,6,7,8,9,11]
 for(var i = 0 ; i < arr.length ; i++){
-    if(arr[i] < min){
-        min = arr[i]
-    }
+    if(arr[i + 1]-arr[i] == 2){
+    console.log(
+        `${arr[i] + 1} is missing number`
+    )}
 }
-document.write(`${min} is minimist number`)
