@@ -777,10 +777,4 @@
 
 // console.log(b);
 
-var arr = [2,4,5,6,7,8]
-for(i = 0;i < arr.length; i++){
-    // console.log(arr[i + 1] -arr[i]){
-        if(arr[i + 1] - arr[i] === 2){
-            document.write(arr[i] + 1)
-        }
-    }
+var arr = []
