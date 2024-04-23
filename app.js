@@ -777,4 +777,3 @@
 
 // console.log(b);
 
-var arr = []
