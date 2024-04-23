@@ -782,8 +782,8 @@ var arr = [2,5,6,7,8]
 for(i = 0 ; i < arr.length; i++){
  diff = arr[i + 1] - arr[i]
  for(j = 1; j < diff; j++){
-    if(diff >1){
-        console.log(arr[i] + j)
+    if(diff >1){   // why comparision with 1
+        console.log(arr[i] + j) // how this working
         // debugger
         // console.log( diff + 1)
      }
