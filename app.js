@@ -778,14 +778,25 @@
 // console.log(b);
 
   
-var arr = [2,5,6,7,8]
-for(i = 0 ; i < arr.length; i++){
- diff = arr[i + 1] - arr[i]
- for(j = 1; j < diff; j++){
-    if(diff >1){   // why comparision with 1
-        console.log(arr[i] + j) // how this working
-        // debugger
-        // console.log( diff + 1)
-     }
- }
+// var arr = [2,5,6,7,8]
+// for(i = 0 ; i < arr.length; i++){
+//  diff = arr[i + 1] - arr[i]
+//  for(j = 1; j < diff; j++){
+//     if(diff >1){   // why comparision with 1
+//         console.log(arr[i] + j) // how this working
+//         // debugger
+//         // console.log( diff + 1)
+//      }
+//  }
+// }
+
+function submit(){
+    var username = document.getElementById("userName");
+    var email = document.getElementById("email");
+    console.log("USERNAME ==>",username.value)
+    console.log("EMAIL ==>",email.value)
+    if(username.value.trim() && email.value.trim()){
+    email.value = ""
+    username.value = ""}
+    else{alert(`Please enter value username and email`)}
 }
