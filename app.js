@@ -778,3 +778,4 @@
 // console.log(b);
 
   
+var arr = ["ahsan" , " baloch"]
