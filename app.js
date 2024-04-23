@@ -784,7 +784,7 @@ for(i = 0 ; i < arr.length; i++){
  for(j = 1; j < diff; j++){
     if(diff >1){
         console.log(arr[i] + j)
-        debugger
+        // debugger
         // console.log( diff + 1)
      }
  }
