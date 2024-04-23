@@ -778,3 +778,11 @@
 // console.log(b);
 
   
+var arr = [2,3,5,6,7,8]
+for(i = 0 ; i < arr.length; i++){
+ diff = arr[i + 1] - arr[i]
+ if(diff === 2){
+    console.log(arr[i] + 1)
+    // console.log( diff + 1)
+ }
+}
