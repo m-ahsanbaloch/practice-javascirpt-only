@@ -804,18 +804,16 @@
 //     else{alert(`Please enter value username and email`)}
 // }
 
-var miss = [1,ne2,4,5,10]
+var num = [1,3,4,5,9,10]
 var missing = []
-for(i = 0; i < miss.length; i++){
-    var difference = miss[i + 1] - miss[i]
+for(i = 0; i < num.length ; i++){
+    var difference = num[i + 1] - num[i]
+    console.log("Difference=>",difference)
     if(difference > 1){
-        for(j = 1; j < difference;j++){
-            missing.push(miss[i] + j)
-            miss.splice(i + j,0,miss[i] + j)
-            // console.log(miss[i] + j)
+        for(j = 1 ;j < difference; j++){
+            var result = num[i] + j
+            console.log(result)
+            debugger 
         }
     }
 }
-console.log("Miss ==>",miss)
-// console.log("missing ==>",missing)
-
