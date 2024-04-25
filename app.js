@@ -785,12 +785,13 @@ for(i = 0 ; i < arr.length; i++){
  for(j = 1; j < diff; j++){
     if(diff >1){  
         missing.push(arr[i] + j)
-        arr.splice(0,0,missing)
+        arr.splice( i + j,0,arr[i] + j)
     }
-
+    
 }
 }
-console.log(missing)
+// arr.splice(0,0,missing)
+// console.log(missing)
 console.log(arr)
 // function submit(){
 //     var username = document.getElementById("userName");
