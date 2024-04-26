@@ -736,7 +736,7 @@
 
 // var miss = [2,5,6,7,8,9]
 // for(i = 0; i < miss.length;i++){
-// var diff = miss[i + 1] - miss[i] 
+// var diff = miss[i + 1] - miss[i]
 // console.log("differnce ===>" ,diff)
 // if(diff > 1){
 //   for(j = 1; j < diff;j++){
@@ -750,13 +750,13 @@
 
 // var missing = [2,4,5,6,7,8]
 // for(var i = 0; i < missing.length; i++){
-//   var diff = 
+//   var diff =
 //   console.log("====>",diff)
 //   if(missing[i + 1] - missing[i] === 2){
-//   var result = missing[i] + 1 
+//   var result = missing[i] + 1
 // console.log("==== Miss ",result)
 //   }
-// } 
+// }
 
 // for (var i = 0; i < 10; i++) {
 //   console.log(i);
@@ -777,17 +777,16 @@
 
 // console.log(b);
 
-  
 // var arr = [11,13,14,15,20]
 // var missing = []
 // for(i = 0 ; i < arr.length; i++){
 //  diff = arr[i + 1] - arr[i]
 //  for(j = 1; j < diff; j++){
-//     if(diff >1){  
+//     if(diff >1){
 //         missing.push(arr[i] + j)
 //         arr.splice( i + j,0,arr[i] + j)
 //     }
-    
+
 // }
 // }
 // // arr.splice(0,0,missing)
@@ -803,14 +802,20 @@
 //     username.value = ""}
 //     else{alert(`Please enter value username and email`)}
 // }
-var arr = [2,3,5,6,10]
-for(i = 0 ; i < arr.length; i++){
-    console.log(arr[i])
-    var difference = arr[i + 1] - arr[i]
-    if(difference > 1){
-        for(j = 1 ; j < difference; j++){
-            document.write(arr[i] + j)  
-        }
-    }
-    debugger
-}
+// var arr = [2,3,5,6,10]
+// for(i = 0 ; i < arr.length; i++){
+//     console.log(arr[i])
+//     var difference = arr[i + 1] - arr[i]
+//     if(difference > 1){
+//         for(j = 1 ; j < difference; j++){
+//             document.write(arr[i] + j)
+//         }
+//     }
+//     debugger
+// }
+
+// for (i = 1; i <= 5; i++) {
+//   for (j = 1; j <= 5; j++) {
+//     console.log(i,j + "<br>")
+//   }
+// }
