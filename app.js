@@ -803,14 +803,14 @@
 //     username.value = ""}
 //     else{alert(`Please enter value username and email`)}
 // }
-
-var num = [1,3,6]
-var missing = []
-for(i = 0; i < num.length; i++){
-    var difference = num[i+1] - num[i]
-    if(difference > 1){
-        for(j = 1; j < difference;j++){
-            console.log(num[i] + j)
-        }
-    }
+var arr = prompt("enter word to search palindrome")
+var reverse = ""
+for(i = arr.length -1; i >=0 ;i--){
+   reverse += arr[i]
+}
+if(arr === reverse){
+ console.log(`yes it is palindrome`)
+}
+else{
+ console.log(`no this is not palindrome`)
 }
