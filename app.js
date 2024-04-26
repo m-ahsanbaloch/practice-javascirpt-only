@@ -804,16 +804,13 @@
 //     else{alert(`Please enter value username and email`)}
 // }
 
-var num = [1,3,4,5,9,10]
+var num = [1,3,6]
 var missing = []
-for(i = 0; i < num.length ; i++){
-    var difference = num[i + 1] - num[i]
-    console.log("Difference=>",difference)
+for(i = 0; i < num.length; i++){
+    var difference = num[i+1] - num[i]
     if(difference > 1){
-        for(j = 1 ;j < difference; j++){
-            var result = num[i] + j
-            console.log(result)
-            debugger 
+        for(j = 1; j < difference;j++){
+            console.log(num[i] + j)
         }
     }
 }
