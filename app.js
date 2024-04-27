@@ -316,7 +316,7 @@
 //   var neww = 25
 //   merchTot = merchTot + neww
 //   return merchTot
-// //   alert(merchTot)                 1   
+// //   alert(merchTot)                 1
 // }
 //   var totalToCharge = calcTot(50.99);
 // alert(totalToCharge)
@@ -819,3 +819,19 @@
 //     console.log(i,j + "<br>")
 //   }
 // }
+
+var fName = "ahsan baloch ";
+var check = true;
+var result = "";
+for (i = 0; i < fName.length; i++) {
+var capitalized = fName[i]
+if(check){
+    capitalized = capitalized.toUpperCase()
+    check = false
+}
+if( capitalized === " "){
+    check = true
+}
+result += capitalized
+}
+console.log(result)
