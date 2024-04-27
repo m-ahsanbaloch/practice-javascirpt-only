@@ -316,7 +316,7 @@
 //   var neww = 25
 //   merchTot = merchTot + neww
 //   return merchTot
-// //   alert(merchTot)
+// //   alert(merchTot)                 1   
 // }
 //   var totalToCharge = calcTot(50.99);
 // alert(totalToCharge)
