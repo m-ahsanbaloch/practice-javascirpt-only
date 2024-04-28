@@ -824,14 +824,26 @@ var fName = "ahsan baloch"
 var check = true
 var result = ""
 for(i = 0 ; i < fName.length;i++){
-  upper = fName[i]
+  var capitalized = fName[i]
   if(check){
-    upper = upper.toUpperCase()
-    check = false
-  }
- else if(upper === " "){
-    check = true
-  }
-  result += upper
+    capitalized = capitalized.toUpperCase()
+  check = false
+}
+else if(capitalized === " "){
+  check = true
+}
+result +=  capitalized
+//   if(check){
+//     upper = upper.toUpperCase()
+//     check = false
+//   }
+//   else if(upper === " "){
+//     check = true
+//   }
+//   else{
+//     check = false
+//   }
+//   result += upper
+// }
 }
 console.log(result)
