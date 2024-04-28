@@ -820,18 +820,18 @@
 //   }
 // }
 
-var fName = "ahsan baloch";
-var check = true;
-var result = "";
-for(i = 0 ; i < fName.length; i++){
-  var capitalized = fName[i]
+var fName = "ahsan baloch"
+var check = true
+var result = ""
+for(i = 0 ; i < fName.length;i++){
+  upper = fName[i]
   if(check){
-    capitalized = capitalized.toUpperCase()
+    upper = upper.toUpperCase()
     check = false
   }
-  if(capitalized == " "){
+  if(upper === " "){
     check = true
   }
-  result += capitalized
+  result += upper
 }
 console.log(result)
