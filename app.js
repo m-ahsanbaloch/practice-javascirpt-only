@@ -829,7 +829,7 @@ for(i = 0 ; i < fName.length;i++){
     upper = upper.toUpperCase()
     check = false
   }
-  if(upper === " "){
+ else if(upper === " "){
     check = true
   }
   result += upper
