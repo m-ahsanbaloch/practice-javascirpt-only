@@ -583,7 +583,7 @@
   
 //      }
 // }
-
+ 
 // function calc(screen){
 //    document.getElementById('input').value += screen
 //    console.log(screen)
