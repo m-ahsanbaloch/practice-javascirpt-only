@@ -847,12 +847,12 @@
 // }
 // }
 // console.log(result)
-var text = "hi this is ahsan baloch hi this is ahsan baloch"
+var text = "hi this is ahsan baloch hi this is ahsan baloch hi this is ahsan baloch from karachi pakistan this abdul samad"
 var fName = "ahsan baloch"
 for(i = 0 ; i < text.length;i++){
-  if(text.slice(i,i+ fName.length) === fName){
-    text = text.slice(0,i) + "arslan baloch" + text.slice(i + fName.length) 
-    // debugger
-  }
+if(text.slice(i,i + fName.length) === fName){
+  text = text.slice(0,i) + "Arslan Baloch" + text.slice(i+ fName.length)
+  // debugger
 }
-    console.log(text)
+}
+console.log(text)
