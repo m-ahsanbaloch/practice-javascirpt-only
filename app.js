@@ -850,11 +850,13 @@
 var text = "hi this is ahsan baloch hi this is ahsan baloch hi this is ahsan baloch from karachi pakistan this abdul samad"
 var fName = "ahsan baloch"
 for(i = 0 ; i < text.length;i++){
-  console.log(text.slice(i,i + fName.length))
-if(text.slice(i,i + fName.length) === fName){
-  console.log(text[i])
-  // text = text.slice(0,i) + "Arslan Baloch" + text.slice(i+ fName.length)
-  // debugger
+  // console.log(text.slice(i,i + fName.length))
+  if(text.slice(i,i + fName.length) === fName){
+    text = text.slice(0,i) + "Arslan Baloch" + text.slice(i + fName.length)
+    console.log(fName.length)
+    // debugger
+  }
 }
-}
+
+console.log(text)
 // console.log(text)
