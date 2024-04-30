@@ -820,19 +820,19 @@
 //   }
 // }
 
-var fName = "ahsan baloch"
-var check = true
-var result = ""
-for(i = 0 ; i < fName.length;i++){
-  var capitalized = fName[i]
-  if(check){
-    capitalized = capitalized.toUpperCase()
-  check = false
-}
-else if(capitalized === " "){
-  check = true
-}
-result +=  capitalized
+// var fName = "ahsan baloch"
+// var check = true
+// var result = ""
+// for(i = 0 ; i < fName.length;i++){
+//   var capitalized = fName[i]
+//   if(check){
+//     capitalized = capitalized.toUpperCase()
+//   check = false
+// }
+// else if(capitalized === " "){
+//   check = true
+// }
+// result +=  capitalized
 //   if(check){ 
 //     upper = upper.toUpperCase()
 //     check = false 
@@ -845,5 +845,14 @@ result +=  capitalized
 //   }
 //   result += upper
 // }
+// }
+// console.log(result)
+var text = "hi this is ahsan baloch hi this is ahsan baloch"
+var fName = "ahsan baloch"
+for(i = 0 ; i < text.length;i++){
+  if(text.slice(i,i+ fName.length) === fName){
+    text = text.slice(0,i) + "arslan baloch" + text.slice(i + fName.length) 
+    // debugger
+  }
 }
-console.log(result)
+    console.log(text)
