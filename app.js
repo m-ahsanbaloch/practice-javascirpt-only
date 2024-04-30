@@ -833,7 +833,7 @@ else if(capitalized === " "){
   check = true
 }
 result +=  capitalized
-//   if(check){
+//   if(check){ 
 //     upper = upper.toUpperCase()
 //     check = false
 //   }
