@@ -857,6 +857,6 @@ for(i = 0 ; i < text.length;i++){
     // debugger
   }
 }
-
+  
 console.log(text)
 // console.log(text)
