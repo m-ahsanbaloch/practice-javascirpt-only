@@ -836,7 +836,7 @@ result +=  capitalized
 //   if(check){ 
 //     upper = upper.toUpperCase()
 //     check = false 
-//   }
+//   }  
 //   else if(upper === " "){
 //     check = true
 //   }
