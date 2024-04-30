@@ -857,6 +857,6 @@ text = text.slice(0,i) + "arslan baloch" + text.slice(i + fName.length)
     // debugger
   }
 }
-  
+   
 console.log(text)
 // console.log(text)
