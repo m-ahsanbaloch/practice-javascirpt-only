@@ -580,7 +580,7 @@
 //           document.write(`found hasan <br>`)
 //           neww = text.replace("hasan","ahsan".toUpperCase())
 //           document.write(neww)
-
+  
 //      }
 // }
 
