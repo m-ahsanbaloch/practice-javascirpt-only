@@ -852,7 +852,7 @@ var fName = "ahsan baloch"
 for(i = 0 ; i < text.length;i++){
   // console.log(text.slice(i,i + fName.length))
   if(text.slice(i,i + fName.length) === fName){
-    text = text.slice(0,i) + "Arslan Baloch" + text.slice(i + fName.length)
+text = text.slice(0,i) + "arslan baloch" + text.slice(i + fName.length)
     console.log(fName.length)
     // debugger
   }
