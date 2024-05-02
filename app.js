@@ -903,6 +903,8 @@
 // console.log(mixPassword.slice(0,12))
 // debugger
 
+var screen = document.getElementById('password').value = ""
+function generate(){
 var small = "abcdefghijklmnopqrstuvwxyz"
 var smallPass = ""
 for(i = 0; i < small.length; i++){
@@ -910,7 +912,7 @@ for(i = 0; i < small.length; i++){
     smallPass += small[randomValue]
     
 }
-console.log(smallPass)
+// console.log(smallPass)
 
 var cap = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 var capPass = ""
@@ -926,6 +928,10 @@ for(i = 0; i < sym.length; i++){
     symPass += sym[randomValue]
     
 }
-console.log(capPass)
+// console.log(capPass)
 var result = smallPass.slice(0,4) + capPass.slice(0,4) + symPass.slice(0,4)
 console.log(result)
+// document.getElementById('passwrod') = result
+document.getElementById('password').value = result
+
+}
