@@ -888,13 +888,37 @@
 // else{
 //     document.write(`<h2>${player2}</h2> Congratulations Player <b>two</b> you win`)
 // }
-var small = "abcdefghijklmnopqrstuvwxyz";
-var cap = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-var sym = "@#$^";
-var allCharacters = small + cap + sym;
-for (i = 0; i < allCharacters.length; i++) {
-  var randomValue = Math.floor(Math.random() * allCharacters.length);
-  smallPassword += allCharacters[randomValue];
-  var result = smallPassword.slice(0, 12);
+// var small = "abcdefghijklmnopqrstuvwxyz"
+// var cap =   "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+// var sym =   "@#$^"
+// var mixPassword = ""
+// var allCharacters = small + cap + sym
+// console.log(allCharacters)
+// for(i = 0 ; i < allCharacters.length;i++){
+//     // debugger
+//     var randomValue = Math.floor(Math.random() * allCharacters.length);
+//     mixPassword += allCharacters[randomValue]
+// }
+// console.log(randomValue)
+// console.log(mixPassword.slice(0,12))
+// debugger
+
+var small = "abcdefghijklmnopqrstuvwxyz"
+var smallPass = ""
+for(i = 0; i < small.length; i++){
+    var randomValue = Math.floor(Math.random() * small.length)
+    smallPass += small[randomValue]
+    
 }
-console.log(result);
+console.log(smallPass)
+
+var cap = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+var capPass = ""
+for(i = 0; i < cap.length; i++){
+    var randomValue = Math.floor(Math.random() * cap.length)
+    capPass += cap[randomValue]
+    
+}
+console.log(capPass)
+var result = smallPass.slice(0,5) + capPass.slice(0,5)
+console.log(result)
