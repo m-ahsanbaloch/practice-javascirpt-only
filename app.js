@@ -936,17 +936,21 @@
 
 // }
 
-var text = "hi this is ahsan baloch hi this is ahsan baloch hi this is ahsan baloch from karachi pakistan this abdul samad"
-var fName = "ahsan baloch"
-var count = 0
-for(i = 0 ; i < text.length;i++){
-  // console.log(text.slice(i,i + fName.length))
- if(text.slice(i,i + fName.length) === fName){
-    count++
-    if(count == 2){
-  text = text.slice(0,i) + "Ahsan karachiwala" + text.slice(i + fName.length)
-}
- }
-}
+// var text = "hi this is ahsan baloch hi this is ahsan baloch hi this is ahsan baloch from karachi pakistan this abdul samad"
+// var fName = "ahsan baloch"
+// var count = 0
+// for(i = 0 ; i < text.length;i++){
+//   // console.log(text.slice(i,i + fName.length))
+//  if(text.slice(i,i + fName.length) === fName){
+//     count++
+//     if(count == 2){
+//   text = text.slice(0,i) + "Ahsan karachiwala" + text.slice(i + fName.length)
+// }
+//  }
+// }
 
-console.log(text)
+// console.log(text)
+var arr = ["ahsan","andul","samad"]
+var arr2 = ["karachi","pakistan"]
+var arr = ['ahsan baloch']
+console.log(arr)
