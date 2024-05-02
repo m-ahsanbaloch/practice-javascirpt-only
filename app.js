@@ -919,6 +919,13 @@ for(i = 0; i < cap.length; i++){
     capPass += cap[randomValue]
     
 }
+var sym = "_@$!><&*#"
+var symPass = ""
+for(i = 0; i < sym.length; i++){
+    var randomValue = Math.floor(Math.random() * sym.length)
+    symPass += sym[randomValue]
+    
+}
 console.log(capPass)
-var result = smallPass.slice(0,5) + capPass.slice(0,5)
+var result = smallPass.slice(0,4) + capPass.slice(0,4) + symPass.slice(0,4)
 console.log(result)
