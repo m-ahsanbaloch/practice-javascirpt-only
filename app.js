@@ -580,10 +580,10 @@
 //           document.write(`found hasan <br>`)
 //           neww = text.replace("hasan","ahsan".toUpperCase())
 //           document.write(neww)
-  
+
 //      }
 // }
- 
+
 // function calc(screen){
 //    document.getElementById('input').value += screen
 //    console.log(screen)
@@ -833,10 +833,10 @@
 //   check = true
 // }
 // result +=  capitalized
-//   if(check){ 
+//   if(check){
 //     upper = upper.toUpperCase()
-//     check = false 
-//   }  
+//     check = false
+//   }
 //   else if(upper === " "){
 //     check = true
 //   }
@@ -847,16 +847,34 @@
 // }
 // }
 // console.log(result)
-var text = "hi this is ahsan baloch hi this is ahsan baloch hi this is ahsan baloch from karachi pakistan this abdul samad"
-var fName = "ahsan baloch"
-for(i = 0 ; i < text.length;i++){
-  // console.log(text.slice(i,i + fName.length))
-  if(text.slice(i,i + fName.length) === fName){
-    text = text.slice(0,i) + "ahmed raza" + text.slice(i + fName.length)
-    console.log(text)
-    debugger
-  }
-}
-   
-console.log(text)
+// var text = "hi this is ahsan baloch hi this is ahsan baloch hi this is ahsan baloch from karachi pakistan this abdul samad"
+// var fName = "ahsan baloch"
+// for(i = 0 ; i < text.length;i++){
+//   // console.log(text.slice(i,i + fName.length))
+//  if(text.slice(i,i + fName.length) === fName){
+//   text = text.slice(0,i) + "Ahsan Samad" + text.slice(i + fName.length)
+//  }debugger
+// }
+
 // console.log(text)
+// console.log(text)
+
+var small = "abcdefghijklmnopqrstuvwxyz"
+let smallPassword = ""
+for(i = 0; i < small.length ; i++){
+    var randomValue = Math.floor(Math.random() * small.length)
+    smallPassword += small[randomValue]
+}
+var cap = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+let capPass = ""
+for(i = 0; i < cap.length; i++){
+    randomValue = Math.floor(Math.random() * cap.length)
+    capPass += cap[randomValue]
+}
+var sym = "!@#$%^&*("
+let symPass = ""
+for(i = 0; i < sym.length; i++){
+    randomValue = Math.floor(Math.random() * sym.length)
+    symPass += sym[randomValue]
+}
+console.log(capPass.slice(0,5)+smallPassword.slice(0,5)+symPass.slice(0,5))
