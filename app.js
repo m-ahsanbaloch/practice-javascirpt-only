@@ -903,35 +903,50 @@
 // console.log(mixPassword.slice(0,12))
 // debugger
 
-var screen = document.getElementById('password').value = ""
-function generate(){
-var small = "abcdefghijklmnopqrstuvwxyz"
-var smallPass = ""
-for(i = 0; i < small.length; i++){
-    var randomValue = Math.floor(Math.random() * small.length)
-    smallPass += small[randomValue]
+// var screen = document.getElementById('password').value = ""
+// function generate(){
+// var small = "abcdefghijklmnopqrstuvwxyz"
+// var smallPass = ""
+// for(i = 0; i < small.length; i++){
+//     var randomValue = Math.floor(Math.random() * small.length)
+//     smallPass += small[randomValue]
     
-}
-// console.log(smallPass)
+// }
+// // console.log(smallPass)
 
-var cap = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-var capPass = ""
-for(i = 0; i < cap.length; i++){
-    var randomValue = Math.floor(Math.random() * cap.length)
-    capPass += cap[randomValue]
+// var cap = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+// var capPass = ""
+// for(i = 0; i < cap.length; i++){
+//     var randomValue = Math.floor(Math.random() * cap.length)
+//     capPass += cap[randomValue]
     
-}
-var sym = "_@$!><&*#"
-var symPass = ""
-for(i = 0; i < sym.length; i++){
-    var randomValue = Math.floor(Math.random() * sym.length)
-    symPass += sym[randomValue]
+// }
+// var sym = "_@$!><&*#"
+// var symPass = ""
+// for(i = 0; i < sym.length; i++){
+//     var randomValue = Math.floor(Math.random() * sym.length)
+//     symPass += sym[randomValue]
     
-}
-// console.log(capPass)
-var result = smallPass.slice(0,4) + capPass.slice(0,4) + symPass.slice(0,4)
-console.log(result)
-// document.getElementById('passwrod') = result
-document.getElementById('password').value = result
+// }
+// // console.log(capPass)
+// var result = smallPass.slice(0,4) + capPass.slice(0,4) + symPass.slice(0,4)
+// console.log(result)
+// // document.getElementById('passwrod') = result
+// document.getElementById('password').value = result
 
+// }
+
+var text = "hi this is ahsan baloch hi this is ahsan baloch hi this is ahsan baloch from karachi pakistan this abdul samad"
+var fName = "ahsan baloch"
+var count = 0
+for(i = 0 ; i < text.length;i++){
+  // console.log(text.slice(i,i + fName.length))
+ if(text.slice(i,i + fName.length) === fName){
+    count++
+    if(count == 2){
+  text = text.slice(0,i) + "Ahsan karachiwala" + text.slice(i + fName.length)
 }
+ }
+}
+
+console.log(text)
