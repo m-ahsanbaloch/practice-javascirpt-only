@@ -950,7 +950,20 @@
 // }
 
 // console.log(text)
-var arr = ["ahsan","andul","samad"]
-var arr2 = ["karachi","pakistan"]
-var arr = ['ahsan baloch']
-console.log(arr)
+// var arr = ["ahsan","andul","samad"]
+// var arr2 = ["karachi","pakistan"]
+// var arr = ['ahsan baloch']
+// console.log(arr)
+
+var text = "hi this is ahsan baloch hi this is ahsan baloch hi this is ahsan baloch"
+var count = 0
+for(i = 0; i < text.length; i++){
+  if(text.slice(i,i + "ahsan baloch".length) === "ahsan baloch"){
+    count++
+    if(count == 2){
+      text = text.slice(0,i) + "arslan baloch" + text.slice(i + "ahsan baloch".length)
+      console.log(text)
+    }
+
+  }
+}
