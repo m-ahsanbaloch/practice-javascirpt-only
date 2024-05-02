@@ -888,5 +888,13 @@
 // else{
 //     document.write(`<h2>${player2}</h2> Congratulations Player <b>two</b> you win`)
 // }
-var small = "abcdefghijklmnopqrstuvwxyz"
-var cap = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+var small = "abcdefghijklmnopqrstuvwxyz";
+var cap = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+var sym = "@#$^";
+var allCharacters = small + cap + sym;
+for (i = 0; i < allCharacters.length; i++) {
+  var randomValue = Math.floor(Math.random() * allCharacters.length);
+  smallPassword += allCharacters[randomValue];
+  var result = smallPassword.slice(0, 12);
+}
+console.log(result);
