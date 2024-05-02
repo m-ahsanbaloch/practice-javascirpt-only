@@ -879,12 +879,14 @@
 // }
 // document.write(capPass.slice(0,3)+smallPassword.slice(0,3)+symPass.slice(0,4))
 
-var player1 = "Heads"
-var player2 = "Tails"
-var randomValue = Math.floor(Math.random() * 2)
-if(randomValue === 0){
-    document.write(player1)
-}
-else{
-    document.write(player2)
-}
+// var player1 = "Heads"
+// var player2 = "Tails"
+// var randomValue = Math.floor(Math.random() * 2)
+// if(randomValue === 0){
+//     document.write(`<h2>${player1}</h2> Congratulations Player <b>One</b> You win`)
+// }
+// else{
+//     document.write(`<h2>${player2}</h2> Congratulations Player <b>two</b> you win`)
+// }
+var small = "abcdefghijklmnopqrstuvwxyz"
+var cap = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
