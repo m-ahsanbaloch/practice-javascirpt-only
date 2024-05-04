@@ -967,5 +967,7 @@
 
 //   }
 // }
+var daysNames = ["sunday","monday","tuesday","wednesday","thursday","friday","saturday"];
 var date = new Date()
-console.log(date.toString());
+var result = daysNames[date.getDay()]
+console.log(result)
