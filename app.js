@@ -967,7 +967,7 @@
 
 //   }
 // }
-var daysNames = ["sunday","monday","tuesday","wednesday","thursday","friday","saturday"];
+var months = ["jan","feb","mar","apr","may","june","jul","aug","sep","oct","nov","dec"]
 var date = new Date()
-var result = daysNames[date.getDay()]
-console.log(result)
+var res = months[date.getMonth()]
+document.write(res)
