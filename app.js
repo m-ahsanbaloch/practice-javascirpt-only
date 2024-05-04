@@ -967,7 +967,18 @@
 
 //   }
 // }
-var months = ["jan","feb","mar","apr","may","june","jul","aug","sep","oct","nov","dec"]
-var date = new Date()
-var res = months[date.getMonth()]
-document.write(res)
+// var months = ["jan","feb","mar","apr","may","june","jul","aug","sep","oct","nov","dec"]
+// var date = new Date()
+// var res = months[date.getMonth()]
+// document.write(res)
+
+// ============== By Ahsan ===============
+var age = prompt("enter your date of birth")
+var currentDate = new Date().getTime()
+var dateOfBirth = new Date(age).getTime()
+var minus = currentDate - dateOfBirth
+var converYear = Math.floor(minus / (1000 * 60 * 60 * 24 * 365))
+var converMonth = Math.floor(minus / (1000 * 60 * 60 * 24 * 31))
+var converdays = Math.floor(minus / (1000 * 60 * 60 * 24 ))
+document.write(`You are ${converYear} year and ${converMonth} months and ${converdays} days old`)
+// document.write(converMonth)
