@@ -910,7 +910,7 @@
 // for(i = 0; i < small.length; i++){
 //     var randomValue = Math.floor(Math.random() * small.length)
 //     smallPass += small[randomValue]
-    
+
 // }
 // // console.log(smallPass)
 
@@ -919,14 +919,14 @@
 // for(i = 0; i < cap.length; i++){
 //     var randomValue = Math.floor(Math.random() * cap.length)
 //     capPass += cap[randomValue]
-    
+
 // }
 // var sym = "_@$!><&*#"
 // var symPass = ""
 // for(i = 0; i < sym.length; i++){
 //     var randomValue = Math.floor(Math.random() * sym.length)
 //     symPass += sym[randomValue]
-    
+
 // }
 // // console.log(capPass)
 // var result = smallPass.slice(0,4) + capPass.slice(0,4) + symPass.slice(0,4)
@@ -972,13 +972,26 @@
 // var res = months[date.getMonth()]
 // document.write(res)
 
+var input = document.getElementById("input");
+
+function result() {
+  currentDate = new Date().getTime();
+  var dateOfBirth = new Date(input.value).getTime();
+  var minus = currentDate - dateOfBirth;
+  var converYear = Math.floor(minus / (1000 * 60 * 60 * 24 * 365));
+  var converMonth = Math.floor(minus / (1000 * 60 * 60 * 24 * 31));
+  var converdays = Math.floor(minus / (1000 * 60 * 60 * 24));
+  var screen = (document.getElementById(
+    "screen"
+  ).value = `You spend ${converYear} year \n ${converMonth} months \n ${converdays} days till yet`);
+} 
 // ============== By Ahsan ===============
-var age = prompt("enter your date of birth")
-var currentDate = new Date().getTime()
-var dateOfBirth = new Date(age).getTime()
-var minus = currentDate - dateOfBirth
-var converYear = Math.floor(minus / (1000 * 60 * 60 * 24 * 365))
-var converMonth = Math.floor(minus / (1000 * 60 * 60 * 24 * 31))
-var converdays = Math.floor(minus / (1000 * 60 * 60 * 24 ))
-document.write(`You are ${converYear} year and ${converMonth} months and ${converdays} days old`)
+// var age = prompt("enter your date of birth")
+// // var currentDate = new Date().getTime()
+// // var dateOfBirth = new Date(age).getTime()
+// // var minus = currentDate - dateOfBirth
+// // var converYear = Math.floor(minus / (1000 * 60 * 60 * 24 * 365))
+// var converMonth = Math.floor(minus / (1000 * 60 * 60 * 24 * 31))
+// var converdays = Math.floor(minus / (1000 * 60 * 60 * 24 ))
+// document.write(`You are ${converYear} year and ${converMonth} months and ${converdays} days old`)
 // document.write(converMonth)
