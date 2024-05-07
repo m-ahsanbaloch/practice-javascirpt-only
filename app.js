@@ -972,19 +972,19 @@
 // var res = months[date.getMonth()]
 // document.write(res)
 
-var input = document.getElementById("input");
+// var input = document.getElementById("input");
 
-function result() {
-  currentDate = new Date().getTime();
-  var dateOfBirth = new Date(input.value).getTime();
-  var minus = currentDate - dateOfBirth;
-  var converYear = Math.floor(minus / (1000 * 60 * 60 * 24 * 365));
-  var converMonth = Math.floor(minus / (1000 * 60 * 60 * 24 * 31));
-  var converdays = Math.floor(minus / (1000 * 60 * 60 * 24));
-  var screen = (document.getElementById(
-    "screen"
-  ).value = `You spend ${converYear} year \n ${converMonth} months \n ${converdays} days till yet`);
-} 
+// function result() {
+//   currentDate = new Date().getTime();
+//   var dateOfBirth = new Date(input.value).getTime();
+//   var minus = currentDate - dateOfBirth;
+//   var converYear = Math.floor(minus / (1000 * 60 * 60 * 24 * 365));
+//   var converMonth = Math.floor(minus / (1000 * 60 * 60 * 24 * 31));
+//   var converdays = Math.floor(minus / (1000 * 60 * 60 * 24));
+//   var screen = (document.getElementById(
+//     "screen"
+//   ).value = `You spend ${converYear} year \n ${converMonth} months \n ${converdays} days till yet`);
+// } 
 // ============== By Ahsan ===============
 // var age = prompt("enter your date of birth")
 // // var currentDate = new Date().getTime()
@@ -995,3 +995,13 @@ function result() {
 // var converdays = Math.floor(minus / (1000 * 60 * 60 * 24 ))
 // document.write(`You are ${converYear} year and ${converMonth} months and ${converdays} days old`)
 // document.write(converMonth)
+// console.log(document)
+var screen = document.getElementById("screen")
+function abc(value){
+    var fName = value
+    var lName =  "baloch"
+    var result = fName + lName
+    console.log(result)
+    return result
+}
+console.log(abc(screen.value),"<=====")
