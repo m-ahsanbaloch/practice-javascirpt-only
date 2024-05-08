@@ -996,12 +996,17 @@
 // document.write(`You are ${converYear} year and ${converMonth} months and ${converdays} days old`)
 // document.write(converMonth)
 // console.log(document)
-var screen = document.getElementById("screen")
-function abc(value){
-    var fName = value
-    var lName =  "baloch"
-    var result = fName + lName
-    console.log(result)
-    return result
+// var screen = document.getElementById("screen")
+
+function abc(){
+    for(i = 0 ; i < 5; i++){
+        
+    // var fName = value
+    // var lName =  "baloch"
+    // var result = fName + lName
+    // console.log(result)
+    // return result
 }
-console.log(abc(screen.value),"<=====")
+console.log(abc())
+
+// console.log(abc(screen.value),"<=====")
