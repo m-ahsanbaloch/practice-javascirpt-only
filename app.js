@@ -999,7 +999,6 @@
 // var screen = document.getElementById("screen")
 
 function abc(){
-    for(i = 0 ; i < 5; i++){
         
     // var fName = value
     // var lName =  "baloch"
