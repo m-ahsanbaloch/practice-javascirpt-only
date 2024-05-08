@@ -1004,6 +1004,6 @@ function abc(){
     var lname = "baloch"
     return `${fname} ${lname}`
 }
-console.log(abc())
-
+var abc = abc()
+console.log(abc)
 // console.log(abc(screen.value),"<=====")
