@@ -1000,11 +1000,9 @@
 
 function abc(){
         
-    // var fName = value
-    // var lName =  "baloch"
-    // var result = fName + lName
-    // console.log(result)
-    // return result
+    var fname = "ahsan"
+    var lname = "baloch"
+    return `${fname} ${lname}`
 }
 console.log(abc())
 
