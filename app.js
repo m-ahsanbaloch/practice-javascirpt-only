@@ -998,12 +998,16 @@
 // console.log(document)
 // var screen = document.getElementById("screen")
 
-function abc(){
+// function abc(){
         
-    var fname = "ahsan"
-    var lname = "baloch"
-    return `${fname} ${lname}`
-}
-var abc = abc()
-console.log(abc)
+//     var fname = "ahsan"
+//     var lname = "baloch"
+//     return `${fname} ${lname}`
+// }
+// var abc = abc()
+// console.log(abc)
 // console.log(abc(screen.value),"<=====")
+var div = document.getElementById("div")
+div.innerHTML = "<h1 style='color: yellow ; font-size: 64px;'>Ahsan</h1>"
+div.innerHTML = "<h1 style=':hover:color: blue ; font-size: 64px;'>Ahsan</h1>"
+// div.innerHTML = "style=':hover:<h1>hahha</h1>'"
