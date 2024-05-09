@@ -1012,14 +1012,14 @@
 // div.innerHTML = "<h1 style=':hover:color: #041231 ; font-size: 64px;'>Ahsan</h1>"
 // div.innerHTML = "style=':hover:<h1>hahha</h1>'"
 // 
-var user = prompt("enter value")
-switch(user) {
-    case "sunday":
-        console.log("yeaa funday")
-    case "saturday" :
-        console.log("yeaa its 1st funday")
-    break
-        default :
-        console.log("bad day")
-        break
-    }
+// var user = prompt("enter value")
+// switch(user) {
+//     case "sunday":
+//         console.log("yeaa funday")
+//     case "saturday" :
+//         console.log("yeaa its 1st funday")
+//     break
+//         default :
+//         console.log("bad day")
+//         break
+//     }
