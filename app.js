@@ -1009,5 +1009,5 @@
 // console.log(abc(screen.value),"<=====")
 var div = document.getElementById("div")
 div.innerHTML = "<h1 style='color: yellow ; font-size: 64px;'>Ahsan</h1>"
-div.innerHTML = "<h1 style=':hover:color: blue ; font-size: 64px;'>Ahsan</h1>"
+// div.innerHTML = "<h1 style=':hover:color: #041231 ; font-size: 64px;'>Ahsan</h1>"
 // div.innerHTML = "style=':hover:<h1>hahha</h1>'"
