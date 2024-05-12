@@ -1023,3 +1023,7 @@
 //         console.log("bad day")
 //         break
 //     }
+
+function abc(){
+    document.getElementById("div").innerHTML = style="display:inline-block !important;"
+}

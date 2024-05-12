@@ -42,3 +42,9 @@ h1{
 input{
     color: rgb(119, 119, 152);
 }
+#div{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    display: none;
+}
