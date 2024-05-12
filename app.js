@@ -1023,7 +1023,9 @@
 //         console.log("bad day")
 //         break
 //     }
-
+ 
 function abc(){
-    document.getElementById("div").innerHTML = style="display:inline-block !important;"
+    document.getElementById("div").style.cssText = 'style="display:block !important;"'
+    var n = "ahsan"
+    console.log(n);
 }
