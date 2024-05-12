@@ -1029,3 +1029,4 @@ function abc(){
     var n = "ahsan"
     console.log(n);
 }
+navigator.clipboard()
