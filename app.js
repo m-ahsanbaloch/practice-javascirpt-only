@@ -1024,9 +1024,13 @@
 //         break
 //     }
  
-function abc(){
-    document.getElementById("div").style.cssText = 'style="display:block !important;"'
-    var n = "ahsan"
-    console.log(n);
+// function abc(){
+//     document.getElementById("div").style.cssText = 'style="display:block !important;"'
+//     var n = "ahsan"
+//     console.log(n);
+// }
+// navigator.clipboard()
+
+function imageFunc(){
+    console.log(event.target.src)
 }
-navigator.clipboard()
