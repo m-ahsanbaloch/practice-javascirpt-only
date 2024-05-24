@@ -1044,15 +1044,19 @@
 var input = document.getElementById('input')
 input.style = "border-radius : 10px; border: 2px solid grey"
 function focuss(){
-if(event.type === 'focus'){
-   input.style = "border : 1px solid blue; outline: 0px; border-radius : 10px"
-}
- else{input.style = "border : 1px solid green; border-radius: 10px"}
-// console.log(event)
+   if(event.type === 'focus'){
+      input.style = "border : 1px solid blue; outline: 0px; border-radius : 10px"
+   }
+   else{input.style = "border : 1px solid green; border-radius: 10px"}
+   // console.log(event)
 }
 function enter(){
    console.log(event)
    if(event.keyCode == "13"){
-   console.log("hello world")
+      console.log("hello world")
+      var list = document.getElementById('list')
+   var value = event.target.value
+      list.innerHTML += `<li style="width: 50%;background-color:red;text-align:end;border-radius:40px;position:absolute;right:111px">${value}</li> <br>`
+      event.target.value = ""
 }
 }
