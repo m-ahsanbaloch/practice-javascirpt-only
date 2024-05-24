@@ -1055,8 +1055,22 @@ function enter(){
    if(event.keyCode == "13"){
       console.log("hello world")
       var list = document.getElementById('list')
-   var value = event.target.value
-      list.innerHTML += `<li style="width: 50%;background-color:red;text-align:end;border-radius:40px;position:absolute;right:111px">${value}</li> <br>`
+      var value = event.target.value
+      list.innerHTML += `<li style="width: 50%;text-align:end;border-radius:40px;position:absolute;right:111px">${value}</li> <br>`
       event.target.value = ""
+      var typing =  document.getElementById("typing")
+     typing.style.display = "flex"
+     if(["hi","salam","suno","hye","oye","sunte"].indexOf(value) !== -1 ){
+        setTimeout(function(){
+           list.innerHTML += `<li style="width: 50%;text-align:start;border-radius:40px;position:absolute;right:111px">salam kese ho</li> <br>`
+           typing.style = "none"
+         },1500)
+         setTimeout(function(){
+            list.innerHTML += `<li style="width: 50%;text-align:start;border-radius:40px;position:absolute;right:111px">how may i help you?</li> <br>`
+            typing.style.display = "none"
+            
+         },2300)
+         
+      }
 }
 }
