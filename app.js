@@ -1050,3 +1050,9 @@ if(event.type === 'focus'){
  else{input.style = "border : 1px solid green; border-radius: 10px"}
 // console.log(event)
 }
+function enter(){
+   console.log(event)
+   if(event.keyCode == "13"){
+   console.log("hello world")
+}
+}
