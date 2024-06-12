@@ -1041,36 +1041,71 @@
 //    }
 // }  
 
-var input = document.getElementById('input')
-input.style = "border-radius : 10px; border: 2px solid grey"
-function focuss(){
-   if(event.type === 'focus'){
-      input.style = "border : 1px solid blue; outline: 0px; border-radius : 10px"
-   }
-   else{input.style = "border : 1px solid green; border-radius: 10px"}
-   // console.log(event)
-}
-function enter(){
-   console.log(event)
-   if(event.keyCode == "13"){
-      console.log("hello world")
-      var list = document.getElementById('list')
-      var value = event.target.value
-      list.innerHTML += `<li style="width: 50%;text-align:end;border-radius:40px;position:absolute;right:111px">${value}</li> <br>`
-      event.target.value = ""
-      var typing =  document.getElementById("typing")
-     typing.style.display = "flex"
-     if(["hi","salam","suno","hye","oye","sunte"].indexOf(value) !== -1 ){
-        setTimeout(function(){
-           list.innerHTML += `<li style="width: 50%;text-align:start;border-radius:40px;position:absolute;right:111px">salam kese ho</li> <br>`
-           typing.style = "none"
-         },1500)
-         setTimeout(function(){
-            list.innerHTML += `<li style="width: 50%;text-align:start;border-radius:40px;position:absolute;right:111px">how may i help you?</li> <br>`
-            typing.style.display = "none"
+
+
+// ===================== Ai Chatbot ===============
+
+// var input = document.getElementById('input')
+// input.style = "border-radius : 10px; border: 2px solid grey"
+// function focuss(){
+//    if(event.type === 'focus'){
+//       input.style = "border : 1px solid blue; outline: 0px; border-radius : 10px"
+//    }
+//    else{input.style = "border : 1px solid green; border-radius: 10px"}
+//    // console.log(event)
+// }
+// function enter(){
+//    console.log(event)
+//    if(event.keyCode == "13"){
+//       console.log("hello world")
+//       var list = document.getElementById('list')
+//       var value = event.target.value
+//       list.innerHTML += `<li style="width: 80%;text-align:end;border-radius:40px;position:absolute;right:111px">${value}</li> <br>`
+//       event.target.value = ""
+//       var typing =  document.getElementById("typing")
+//      typing.style.display = "flex" 
+//      if(["hi","salam","suno","hye","oye","sunte"].indexOf(value) !== -1 ){
+//         setTimeout(function(){
+//            list.innerHTML += `<li style="width: 80%;text-align:start;border-radius:40px;position:absolute;right:111px">salam kese ho</li> <br>`
+//            typing.style = "none"
+//          },1500)
+//          setTimeout(function(){
+//             list.innerHTML += `<li style="width: 80%;text-align:start;border-radius:40px;position:absolute;right:111px">how may i help you?</li> <br>`
+//             typing.style.display = "none"
             
-         },2300)
+//          },2300)
          
-      }
+//       }
+// }
+// }
+
+// ===================== Ai Chatbot ===============
+
+// var obj = {
+//    name : "ahsan",
+//    adress : "liaquatabad",
+//    number : "03127744888",
+//    email : "abc@gmail.com",
+//    active : true,
+//    school : {
+//       name : "Smit",
+//    },
+//    ahsan : function (){
+//       return `${obj.name} (${obj.school.name})`
+//    }
+
+// }
+// console.log(obj.ahsan())
+
+// obj.fatherName = null
+
+// delete obj.name
+// console.log(obj)
+
+var students = {
+   names : {
+      ahsan : "172883",
+      najeeb : "172884"
+   }
 }
-}
+console.log(students.names)

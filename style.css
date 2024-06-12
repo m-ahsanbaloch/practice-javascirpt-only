@@ -48,3 +48,22 @@ input{
     background-color: red;
     /* display: none; */
 }
+.typing{
+    width: 80% !important;
+    height: 20px;
+    font-size: 12px;
+    text-align: start;
+    color: gray ;
+    margin-left: 95px;
+    /* background-color: red !important; */
+}
+
+.main{
+    width: 100%;
+    background-color: red;
+    display: flex;
+}
+#input[type="text"]{
+    width: 600px !important;
+    /* width: 100% !important; */
+}
