@@ -1093,7 +1093,7 @@
 //    ahsan : function (){
 //       return `${obj.name} (${obj.school.name})`
 //    }
- 
+  
 // } 
 // console.log(obj.ahsan())
 
