@@ -1092,20 +1092,25 @@
 //    },
 //    ahsan : function (){
 //       return `${obj.name} (${obj.school.name})`
+//       // console.log(this)
 //    }
   
 // } 
 // console.log(obj.ahsan())
 
+function aaa(){
+   console.log(this)
+}
+aaa()
 // obj.fatherName = null
 
 // delete obj.name
 // console.log(obj)
 
-var students = {
-   names : {
-      ahsan : "172883",
-      najeeb : "172884"
-   }
-}
-console.log(students.names)
+// var students = {
+//    names : {
+//       ahsan : "172883",
+//       najeeb : "172884"
+//    }
+// }
+// console.log(students.names)
