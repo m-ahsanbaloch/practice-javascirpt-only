@@ -1098,10 +1098,10 @@
 // } 
 // console.log(obj.ahsan())
 
-function aaa(){
-   console.log(this)
-}
-aaa()
+// function aaa(){
+//    console.log(this)
+// }
+// aaa()
 // obj.fatherName = null
 
 // delete obj.name
@@ -1114,3 +1114,107 @@ aaa()
 //    }
 // }
 // console.log(students.names)
+
+// var screenn = document.getElementById('screen')
+// var honda = {
+//    civic : {
+//       varient : "Civic Vti Oriel",
+//       model : "2023",
+//       price : 4000000
+//    },
+//    city : {
+//       varient : "City Aspire",
+//       model : "2022",
+//       price : 3500000
+//    }
+// }
+// honda.civic.doors = 4
+// screenn.innerHTML = Object.keys(honda.civic)
+// console.log(Object.keys(honda))
+
+
+// var arr = []
+// function Student(name,age){
+//    this.name = name;
+//    this.age = age;
+
+// }
+
+// // new Student();
+// // console.log()
+// var match1 = new Student("ahsan",22)
+// // new Student();
+// // console.log()
+// var match2 = new Student("hamza",8)
+// console.log(match1)
+// console.log(match2)
+
+// var honda = {
+//    civic : {
+//       varient : "Civic Vti Oriel",
+//       model : "2023",
+//       price : 4000000
+//    },
+//    city : {
+//       varient : "City Aspire",
+//       model : "2022",
+//       price : 3500000
+//    }
+// }
+var carName = document.getElementById('carName')
+var carModel = document.getElementById('carModel')
+
+var cars = {
+   honda : {
+         civic : {
+            varient : "Civic Vti Oriel",
+            model : "2023",
+            price : 4000000
+         },
+         city : {
+            varient : "City Aspire",
+            model : "2022",
+            price : 3500000
+         }
+      },
+      
+      toyota : {
+         corolla : {
+            varient : "altis Vvti ",
+            model : "2023",
+            price : 4000000
+         },
+         fortuner : {
+            varient : "Sigma",
+            model : "2022",
+            price : 3500000
+         }
+      }
+      
+}
+for ( var key in cars){
+   // console.log(key)
+carName.innerHTML += `<option  value="${key}"> ${key}</option>`
+ 
+}
+function getVarient(){
+   // console.log(event.target.value)
+   var selectedManufacture = event.target.value
+   // console.log(selectedManufacture)
+   carModel.innerHTML =`<option  value=""> Varient</option>`
+   if(selectedManufacture){
+      var models = cars[selectedManufacture]
+   }
+   for(var modelName in cars[selectedManufacture]){
+      carModel.innerHTML += `<option  value=""> ${modelName}</option>`
+      console.log(modelName)
+   }
+   // for (var key1 in cars[key]){
+   //    // console.log(key1)
+      
+   //    carModel.innerHTML += `<option  value=""> ${key1}</option>`
+   //    // if(carModel.onselect === "corolla"){
+   //    //    console.log("corolla")
+   //    // }
+   // }
+}
