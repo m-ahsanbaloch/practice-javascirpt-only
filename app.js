@@ -1265,12 +1265,12 @@
 // }
 
 
-var count = 0 
+// var count = 0
+var arr 
 function abc(){
-  for(i = 0 ; i  < 5 ;i++){
-    count++
-    console.log(count);
+  
     
   }
-}
+
+abc()
 abc()
