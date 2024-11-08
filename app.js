@@ -1266,15 +1266,27 @@
 
 
 // var count = 0
-function abc(roll){
-  var rollNumber = ['1233','2233'] 
-  if(rollNumber.indexOf(roll) !== -1){
-    return "yes Available"
-  }
-  else{
-    return "no available"
-  }
+// function abc(roll){
+//   var rollNumber = ['1233','2233'] 
+//   if(rollNumber.indexOf(roll) !== -1){
+//     return "yes Available"
+//   }
+//   else{
+//     return "no available"
+//   }
     
-  }
+//   }
 
-console.log(abc('1223'))
+// console.log(abc('1223'))
+
+
+var students = {
+  ahsan : {
+    roll : 1234,
+    name : "ahsan baloch",
+    age : 20
+
+  },
+}
+students.ahsan.name = "Mr.Ahsan"
+console.log(students)
