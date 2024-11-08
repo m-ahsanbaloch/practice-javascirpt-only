@@ -1266,11 +1266,15 @@
 
 
 // var count = 0
-var arr 
-function abc(){
-  
+function abc(roll){
+  var rollNumber = ['1233','2233'] 
+  if(rollNumber.indexOf(roll) !== -1){
+    return "yes Available"
+  }
+  else{
+    return "no available"
+  }
     
   }
 
-abc()
-abc()
+console.log(abc('1223'))
