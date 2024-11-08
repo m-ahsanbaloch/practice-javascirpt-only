@@ -1248,18 +1248,29 @@
 // }
 
 
-var nam = prompt("enter search here")
-var text = "hi this is ahsan baloch here from karachi"
-var check = false
-for(i = 0; i < text.length; i++){
-  var result = text.slice(i, i + nam.length)
-  if(result.indexOf(nam) !== -1){
-    console.log(result)
-    check = true
-    alert(`${nam} found successfully`)
+// var nam = prompt("enter search here")
+// var text = "hi this is ahsan baloch here from karachi"
+// var check = false
+// for(i = 0; i < text.length; i++){
+//   var result = text.slice(i, i + nam.length)
+//   if(result.indexOf(nam) !== -1){
+//     console.log(result)
+//     check = true
+//     alert(`${nam} found successfully`)
+//   }
+//   console.log(result)
+// }
+// if(check === false){
+// alert(`${nam} not found`)
+// }
+
+
+var count = 0 
+function abc(){
+  for(i = 0 ; i  < 5 ;i++){
+    count++
+    console.log(count);
+    
   }
-  console.log(result)
 }
-if(check === false){
-alert(`${nam} not found`)
-}
+abc()
