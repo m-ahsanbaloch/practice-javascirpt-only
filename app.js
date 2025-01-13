@@ -1340,9 +1340,10 @@ model.addEventListener("change",function(event){
   for(var mdetails in cars){
 
     console.log(mdetails)
-    for(var ddetails in mdetails[selectedModel]){
+    
+    for(var ddetails in cars[mdetails][){
       console.log(ddetails[selectedModel])
-        }
+    }
+    
   }
-  
 })
