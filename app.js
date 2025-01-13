@@ -1321,17 +1321,25 @@ var cars = {
  }
 }
 for(var key in cars){
-  console.log(key)
+  // console.log(key)
   manufacture.innerHTML += `<option>${key}</option>`
 }
 manufacture.addEventListener('change',function(){
   var selected = event.target.value
+  model.innerHTML = ""
   for(var key1 in  cars[selected]){
-    console.log(key1)
+    // console.log(key1)
     model.innerHTML += `<option>${key1}</option>`
   }
  
 })
 model.addEventListener("change",function(event){
+  var selectedModel = event.target.value
+  console.log(selectedModel)
+  for(var mdetails in cars)
+    console.log(mdetails)
+  for(var ddetails in mdetails[selectedModel]){
+console.log(ddetails)
+  }
 
 })
