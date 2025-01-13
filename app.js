@@ -1288,6 +1288,7 @@
 // console.log(students);
 var manufacture = document.getElementById('manufacture')
 var model = document.getElementById('model')
+var main = document.getElementById("main")
 var cars = {
  toyota : {
   corolla : {
@@ -1322,28 +1323,40 @@ var cars = {
 }
 for(var key in cars){
   // console.log(key)
-  manufacture.innerHTML += `<option>${key}</option>`
+  manufacture.innerHTML += `<option value="${key}">${key}</option>`
 }
 manufacture.addEventListener('change',function(){
   var selected = event.target.value
   model.innerHTML = ""
-  model.innerHTML = `<option value="empty">Select Model</option>`
+  model.innerHTML = `<option value="${key}">Select Model</option>`
   for(var key1 in  cars[selected]){
     // console.log(key1)
-    model.innerHTML += `<option>${key1}</option>`
+    model.innerHTML += `<option value="${key1}">${key1}</option>`
   }
  
 })
 model.addEventListener("change",function(event){
   var selectedModel = event.target.value
+  var manufactureValue = manufacture.value
+  console.log("=======>",manufactureValue)
   console.log(selectedModel)
-  for(var mdetails in cars){
+  console.log("<+++>",cars[manufactureValue][selectedModel])
+ main.innerHTML = `<div class="card">
+  <h1>${cars[manufactureValue][selectedModel].model}</h1>
+  <ul class="cardList">
+  <li>Model : ${cars[manufactureValue][selectedModel].model}</li>
+  <li>Manufacture : ${cars[manufactureValue][selectedModel].manufacture}</li>
+  <li>Condition : ${cars[manufactureValue][selectedModel].condition}</li>
+  <li>Mileage : ${cars[manufactureValue][selectedModel].mileage}</li>
+  </ul>
+ </div>`
+  // for(var mdetails in cars){
 
-    console.log(mdetails)
+  //   console.log(mdetails)
     
-    for(var ddetails in cars[mdetails][){
-      console.log(ddetails[selectedModel])
-    }
+  //   for(var ddetails in cars[mdetails]){
+  //     console.log(cars[mdetails][ddetails])
+  //   }
     
-  }
+  // }
 })
