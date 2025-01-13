@@ -1289,26 +1289,49 @@
 var manufacture = document.getElementById('manufacture')
 var model = document.getElementById('model')
 var cars = {
-  toyota : {
-    model : "corolla",
-    manufacture : "toyota",
-    price : 1000000,
-     
+ toyota : {
+  corolla : {
+    model : "corolla 2020",
+    manufacture : "2020",
+    condition : "new",
+    mileage : "136000"
   },
-  honda : {
-    model : "city",
-    manufacture : "honda",
-    price : 800000,
+  camry : {
+    model : "camry 2020",
+    manufacture : "2020",
+    condition : "new",
+    mileage : "126000"
 
   }
+ },
+ honda : {
+  civic : {
+    model : "civic 2020",
+    manufacture : "2020",
+    condition : "new",
+    mileage : "100000"
+
+  },
+  accord : {
+    model : "accord 2020",
+    manufacture : "2020",
+    condition : "new",
+    mileage : "120000"
+  }
+ }
 }
 for(var key in cars){
   console.log(key)
   manufacture.innerHTML += `<option>${key}</option>`
 }
 manufacture.addEventListener('change',function(){
-  var selected = manufacture.value
+  var selected = event.target.value
   for(var key1 in  cars[selected]){
     console.log(key1)
+    model.innerHTML += `<option>${key1}</option>`
   }
+ 
+})
+model.addEventListener("change",function(event){
+
 })
