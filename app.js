@@ -1304,4 +1304,11 @@ var cars = {
 }
 for(var key in cars){
   console.log(key)
+  manufacture.innerHTML += `<option>${key}</option>`
 }
+manufacture.addEventListener('change',function(){
+  var selected = manufacture.value
+  for(var key1 in  cars[selected]){
+    console.log(key1)
+  }
+})
