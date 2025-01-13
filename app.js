@@ -316,7 +316,7 @@
 //   var neww = 25
 //   merchTot = merchTot + neww
 //   return merchTot
-// //   alert(merchTot)                 1 
+// //   alert(merchTot)                 1
 // }
 //   var totalToCharge = calcTot(50.99);
 // alert(totalToCharge)
@@ -1247,7 +1247,6 @@
 //   }
 // }
 
-
 // var nam = prompt("enter search here")
 // var text = "hi this is ahsan baloch here from karachi"
 // var check = false
@@ -1264,29 +1263,45 @@
 // alert(`${nam} not found`)
 // }
 
-
 // var count = 0
 // function abc(roll){
-//   var rollNumber = ['1233','2233'] 
+//   var rollNumber = ['1233','2233']
 //   if(rollNumber.indexOf(roll) !== -1){
 //     return "yes Available"
 //   }
 //   else{
 //     return "no available"
 //   }
-    
+
 //   }
 
 // console.log(abc('1223'))
 
-
-var students = {
-  ahsan : {
-    roll : 1234,
-    name : "ahsan baloch",
-    age : 20
-
+// var students = {
+//   ahsan: {
+//     roll: 1234,
+//     name: "ahsan baloch",
+//     age: 20,
+//   },
+// };
+// students.ahsan.name = "Mr.Ahsan";
+// console.log(students);
+var manufacture = document.getElementById('manufacture')
+var model = document.getElementById('model')
+var cars = {
+  toyota : {
+    model : "corolla",
+    manufacture : "toyota",
+    price : 1000000,
+    
   },
+  honda : {
+    model : "city",
+    manufacture : "honda",
+    price : 800000,
+
+  }
 }
-students.ahsan.name = "Mr.Ahsan"
-console.log(students)
+for(var key in cars){
+  console.log(key)
+}
