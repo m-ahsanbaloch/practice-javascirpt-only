@@ -1331,7 +1331,6 @@ manufacture.addEventListener('change',function(){
   model.innerHTML = `<option value="${key}">Select Model</option>`
   for(var key1 in  cars[selected]){
     // console.log(key1)
-  
     model.innerHTML += `<option value="${key1}">${key1}</option>`
   }
  
@@ -1342,7 +1341,15 @@ model.addEventListener("change",function(event){
   console.log("=======>",manufactureValue)
   console.log(selectedModel)
   console.log("<+++>",cars[manufactureValue][selectedModel])
-
+ main.innerHTML = `<div class="card">
+  <h1>${cars[manufactureValue][selectedModel].model}</h1>
+  <ul class="cardList">
+  <li>Model : ${cars[manufactureValue][selectedModel].model}</li>
+  <li>Manufacture : ${cars[manufactureValue][selectedModel].manufacture}</li>
+  <li>Condition : ${cars[manufactureValue][selectedModel].condition}</li>
+  <li>Mileage : ${cars[manufactureValue][selectedModel].mileage}</li>
+  </ul>
+ </div>`
   // for(var mdetails in cars){
 
   //   console.log(mdetails)
