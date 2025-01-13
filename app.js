@@ -1293,7 +1293,7 @@ var cars = {
     model : "corolla",
     manufacture : "toyota",
     price : 1000000,
-    
+     
   },
   honda : {
     model : "city",
