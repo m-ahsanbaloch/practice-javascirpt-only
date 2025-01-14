@@ -1379,13 +1379,4 @@ model.addEventListener("change",function(event){
  </div>`
   }
  
-  // for(var mdetails in cars){
-
-  //   console.log(mdetails)
-    
-  //   for(var ddetails in cars[mdetails]){
-  //     console.log(cars[mdetails][ddetails])
-  //   }
-    
-  // }
 })
