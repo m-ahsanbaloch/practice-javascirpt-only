@@ -1329,6 +1329,7 @@ manufacture.addEventListener('change',function(){
   var selected = event.target.value
   model.innerHTML = ""
   model.innerHTML = `<option value="${key}">Select Model</option>`
+  model.innerHTML += `<option value="showAll">Show All In ${selected}</option>`
   for(var key1 in  cars[selected]){
     // console.log(key1)
     model.innerHTML += `<option value="${key1}">${key1}</option>`
@@ -1337,11 +1338,34 @@ manufacture.addEventListener('change',function(){
 })
 model.addEventListener("change",function(event){
   var selectedModel = event.target.value
+  var showAll = model.value
+  
+  
   var manufactureValue = manufacture.value
   console.log("=======>",manufactureValue)
   console.log(selectedModel)
   console.log("<+++>",cars[manufactureValue][selectedModel])
- main.innerHTML = `<div class="card">
+  if(selectedModel == "showAll"){
+    main.innerHTML = ""
+    for(var key in cars[manufactureValue]){
+      // console.log(cars[manufactureValue][key])
+      var details = cars[manufactureValue][key]
+      main.innerHTML += `
+      <div class="card"
+      <ul>
+        <li><strong>Model:</strong> ${details.model}</li>
+        <li><strong>Manufacture:</strong> ${details.manufacture}</li>
+        <li><strong>Condition:</strong> ${details.condition}</li>
+        <li><strong>Mileage:</strong> ${details.mileage}</li>
+        
+        </ul>
+      </div>
+    `;
+      
+    }
+  }
+  else{
+    main.innerHTML = `<div class="card">
   <h1>${cars[manufactureValue][selectedModel].model}</h1>
   <ul class="cardList">
   <li>Model : ${cars[manufactureValue][selectedModel].model}</li>
@@ -1350,6 +1374,8 @@ model.addEventListener("change",function(event){
   <li>Mileage : ${cars[manufactureValue][selectedModel].mileage}</li>
   </ul>
  </div>`
+  }
+ 
   // for(var mdetails in cars){
 
   //   console.log(mdetails)

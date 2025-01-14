@@ -1,5 +1,16 @@
 .card{
     background-color: yellow;
-    width: 400px;
-    height: 500px;
+    width: 300px;
+    height: 300px;
+    list-style: none;
+    margin-top: 40px;
+    margin-left: 10px;
+}
+.card li{
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.main{
+    display: flex;
+    justify-content: center;
 }
