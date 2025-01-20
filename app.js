@@ -1286,97 +1286,227 @@
 // };
 // students.ahsan.name = "Mr.Ahsan";
 // console.log(students);
-var manufacture = document.getElementById('manufacture')
-var model = document.getElementById('model')
-var main = document.getElementById("main")
+var manufacture = document.getElementById("manufacture");
+var model = document.getElementById("model");
+var main = document.getElementById("main");
 var cars = {
- toyota : {
-  corolla : {
-    model : "corolla 2020",
-    manufacture : "2020",
-    condition : "new",
-    mileage : "136000"
+  toyota: {
+    corolla: {
+      model: "corolla 2023",
+      manufacture: "2023",
+      condition: "old",
+      mileage: "156000",
+      image: "https://example.com/images/toyota_corolla_2023.jpg",
+    },
+    camry: {
+      model: "camry 2020",
+      manufacture: "2020",
+      condition: "new",
+      mileage: "126000",
+      image: "https://example.com/images/toyota_camry_2020.jpg",
+    },
+    rav4: {
+      model: "rav4 2018",
+      manufacture: "2018",
+      condition: "old",
+      mileage: "200000",
+      image: "https://example.com/images/toyota_rav4_2018.jpg",
+    },
   },
-  camry : {
-    model : "camry 2020",
-    manufacture : "2020",
-    condition : "new",
-    mileage : "126000"
-
-  }
- },
- honda : {
-  civic : {
-    model : "civic 2020",
-    manufacture : "2020",
-    condition : "new",
-    mileage : "100000"
-
+  honda: {
+    civic: {
+      model: "civic 2020",
+      manufacture: "2020",
+      condition: "new",
+      mileage: "100000",
+      image: "https://example.com/images/honda_civic_2020.jpg",
+    },
+    accord: {
+      model: "accord 2020",
+      manufacture: "2020",
+      condition: "new",
+      mileage: "120000",
+      image: "https://example.com/images/honda_accord_2020.jpg",
+    },
+    crv: {
+      model: "crv 2021",
+      manufacture: "2021",
+      condition: "new",
+      mileage: "80000",
+      image: "https://example.com/images/honda_crv_2021.jpg",
+    },
   },
-  accord : {
-    model : "accord 2020",
-    manufacture : "2020",
-    condition : "new",
-    mileage : "120000"
-  }
- }
-}
-for(var key in cars){
-  // console.log(key)
-  manufacture.innerHTML += `<option value="${key}">${key}</option>`
-}
-manufacture.addEventListener('change',function(){
-  var selected = event.target.value
-  model.innerHTML = ""
-  model.innerHTML = `<option value="">Select Model</option>`
-  model.innerHTML += `<option value="showAll">Show All In ${selected}</option>`
-  for(var key1 in  cars[selected]){
-    // console.log(key1)
-    model.innerHTML += `<option value="${key1}">${key1}</option>`
-  }
+  ford: {
+    focus: {
+      model: "focus 2019",
+      manufacture: "2019",
+      condition: "old",
+      mileage: "150000",
+      image: "https://example.com/images/ford_focus_2019.jpg",
+    },
+    explorer: {
+      model: "explorer 2020",
+      manufacture: "2020",
+      condition: "new",
+      mileage: "110000",
+      image: "https://example.com/images/ford_explorer_2020.jpg",
+    },
+    mustang: {
+      model: "mustang 2022",
+      manufacture: "2022",
+      condition: "new",
+      mileage: "50000",
+      image: "https://example.com/images/ford_mustang_2022.jpg",
+    },
+  },
+  bmw: {
+    series3: {
+      model: "3 Series 2017",
+      manufacture: "2017",
+      condition: "old",
+      mileage: "180000",
+      image: "https://example.com/images/bmw_3series_2017.jpg",
+    },
+    series5: {
+      model: "5 Series 2019",
+      manufacture: "2019",
+      condition: "new",
+      mileage: "90000",
+      image: "https://example.com/images/bmw_5series_2019.jpg",
+    },
+    x5: {
+      model: "X5 2021",
+      manufacture: "2021",
+      condition: "new",
+      mileage: "70000",
+      image: "https://example.com/images/bmw_x5_2021.jpg",
+    },
+  },
+  mercedes: {
+    cclass: {
+      model: "C-Class 2020",
+      manufacture: "2020",
+      condition: "new",
+      mileage: "60000",
+      image: "https://example.com/images/mercedes_cclass_2020.jpg",
+    },
+    eclass: {
+      model: "E-Class 2018",
+      manufacture: "2018",
+      condition: "old",
+      mileage: "140000",
+      image: "https://example.com/images/mercedes_eclass_2018.jpg",
+    },
+    sclass: {
+      model: "S-Class 2022",
+      manufacture: "2022",
+      condition: "new",
+      mileage: "30000",
+      image: "https://example.com/images/mercedes_sclass_2022.jpg",
+    },
+  },
+};
+
+for (var key in cars) {
+
+  manufacture.innerHTML += `<option value="${key}">${key}</option>`;
  
-})
-model.addEventListener("change",function(event){
-  var selectedModel = event.target.value
-  var showAll = model.value
-  if(!model.value){
-    main.innerHTML = ""
-    return
-  }
+}
+manufacture.addEventListener("change", function (event) {
+  main.innerHTML = "";
+  model.innerHTML = "";
+  model.innerHTML = `<option value="">Select Model</option>`;
+  var selected = event.target.value;
   
-  var manufactureValue = manufacture.value
-  console.log("=======>",manufactureValue)
-  console.log(selectedModel)
-  console.log("<+++>",cars[manufactureValue][selectedModel])
-  if(selectedModel == "showAll"){
-    main.innerHTML = ""
-    for(var key in cars[manufactureValue]){
-      // console.log(cars[manufactureValue][key])
-      var details = cars[manufactureValue][key]
-      main.innerHTML += `
-      <div class="card"
-      <ul>
-        <li><strong>Model:</strong> ${details.model}</li>
-        <li><strong>Manufacture:</strong> ${details.manufacture}</li>
-        <li><strong>Condition:</strong> ${details.condition}</li>
-        <li><strong>Mileage:</strong> ${details.mileage}</li>
-        
-        </ul>
-      </div>
-    `;
-      
+  model.innerHTML += `<option value="showAll">Show All In ${selected}</option>`;
+  for (var key1 in cars[selected]) {
+    
+    model.innerHTML += `<option Value="${key1}">${key1}</option>`;
+  }
+});
+model.addEventListener("change", function (event) {
+  var selectedManufacter = manufacture.value;
+
+  var selectedModel = event.target.value;
+  if (model.value == "showAll") {
+    main.innerHTML = "";
+    for (var all in cars[selectedManufacter]) {
+      var showAll = cars[selectedManufacter][all];
+      main.innerHTML += `<div class="card">
+      <img src="${showAll.image}" alt="${showAll.model}">
+      <h3>${showAll.model}</h3>
+       <li>Model : ${showAll.model}</li>
+        <li>MileAge : ${showAll.mileage}</li>
+        <li>Manufacture : ${showAll.manufacture}</li>
+        <li>Condition : ${showAll.condition}</li>
+      </div>`;
     }
-  }
-  else{
+  } else if (selectedModel) {
+    
+    for (var key2 in cars[selectedManufacter])
+      var result = cars[selectedManufacter][selectedModel];
     main.innerHTML = `<div class="card">
-  <h1>${cars[manufactureValue][selectedModel].model}</h1>
-  <ul class="cardList">
-  <li>Model : ${cars[manufactureValue][selectedModel].model}</li>
-  <li>Manufacture : ${cars[manufactureValue][selectedModel].manufacture}</li>
-  <li>Condition : ${cars[manufactureValue][selectedModel].condition}</li>
-  <li>Mileage : ${cars[manufactureValue][selectedModel].mileage}</li>
-  </ul>
- </div>`
+    <img src="${result.image}" alt="${result.model}">
+        <h3>${result.model}</h3>
+        <li>Model : ${result.model}</li>
+        <li>MileAge : ${result.mileage}</li>
+         <li>Manufacture : ${result.manufacture}</li>
+        <li>Condition : ${result.condition}</li>
+        </div>`;
+  } else {
+    main.innerHTML = "";
+    return;
   }
- 
-})
+});
+
+// manufacture.addEventListener("change", function () {
+//   var selected = event.target.value;
+//   model.innerHTML = "";
+//   model.innerHTML = `<option value="">Select Model</option>`;
+//   model.innerHTML += `<option value="showAll">Show All In ${selected}</option>`;
+//   for (var key1 in cars[selected]) {
+//     // console.log(key1)
+//     model.innerHTML += `<option value="${key1}">${key1}</option>`;
+//   }
+// });
+// model.addEventListener("change", function (event) {
+//   var selectedModel = event.target.value;
+//   var showAll = model.value;
+//   if (!model.value) {
+//     main.innerHTML = "";
+//     return;
+//   }
+
+//   var manufactureValue = manufacture.value;
+//   console.log("=======>", manufactureValue);
+//   console.log(selectedModel);
+//   console.log("<+++>", cars[manufactureValue][selectedModel]);
+//   if (selectedModel == "showAll") {
+//     main.innerHTML = "";
+//     for (var key in cars[manufactureValue]) {
+//       // console.log(cars[manufactureValue][key])
+//       var details = cars[manufactureValue][key];
+//       main.innerHTML += `
+//       <div class="card"
+//       <ul>
+//         <li><strong>Model:</strong> ${details.model}</li>
+//         <li><strong>Manufacture:</strong> ${details.manufacture}</li>
+//         <li><strong>Condition:</strong> ${details.condition}</li>
+//         <li><strong>Mileage:</strong> ${details.mileage}</li>
+
+//         </ul>
+//       </div>
+//     `;
+//     }
+//   } else {
+//     main.innerHTML = `<div class="card">
+//   <h1>${cars[manufactureValue][selectedModel].model}</h1>
+//   <ul class="cardList">
+//   <li>Model : ${cars[manufactureValue][selectedModel].model}</li>
+//   <li>Manufacture : ${cars[manufactureValue][selectedModel].manufacture}</li>
+//   <li>Condition : ${cars[manufactureValue][selectedModel].condition}</li>
+//   <li>Mileage : ${cars[manufactureValue][selectedModel].mileage}</li>
+//   </ul>
+//  </div>`;
+//   }
+// });
