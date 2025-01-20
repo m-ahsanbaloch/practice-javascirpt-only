@@ -1,7 +1,7 @@
 .card{
     background-color: yellow;
     width: 300px;
-    height: 300px;
+    /* height: 300px; */
     list-style: none;
     margin-top: 40px;
     margin-left: 10px;
@@ -9,6 +9,11 @@
 .card li{
     margin-top: 20px;
     margin-left: 10px;
+}
+.card img {
+    width: 100%;
+    object-fit: contain;
+    height: 150px;
 }
 .main{
     display: flex;
