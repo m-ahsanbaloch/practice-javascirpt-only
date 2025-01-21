@@ -1289,6 +1289,7 @@
 var manufacture = document.getElementById("manufacture");
 var model = document.getElementById("model");
 var main = document.getElementById("main");
+var search = document.getElementById("input")
 var cars = {
   toyota: {
     corolla: {
@@ -1459,6 +1460,54 @@ model.addEventListener("change", function (event) {
     return;
   }
 });
+search.addEventListener("input", function (event) {
+  const query = event.target.value.toLowerCase(); // Get the input and convert to lowercase for case-insensitive matching
+  main.innerHTML = ""; // Clear the main container
+
+  // Check if the query matches a manufacturer
+  if (cars[query]) {
+    // Show all cars of the matched manufacturer
+    for (const key in cars[query]) {
+      const car = cars[query][key];
+      main.innerHTML += `<div class="card">
+        <img src="${car.image}" alt="${car.model}">
+        <h3>${car.model}</h3>
+        <li>Model : ${car.model}</li>
+        <li>MileAge : ${car.mileage}</li>
+        <li>Manufacture : ${car.manufacture}</li>
+        <li>Condition : ${car.condition}</li>
+      </div>`;
+    }
+  } else {
+    // Check for a match in individual car models
+    let carFound = false;
+    for (const manufacturer in cars) {
+      for (const model in cars[manufacturer]) {
+        const car = cars[manufacturer][model];
+        if (model === query) {
+          // Match found, show the specific car
+          main.innerHTML = `<div class="card">
+            <img src="${car.image}" alt="${car.model}">
+            <h3>${car.model}</h3>
+            <li>Model : ${car.model}</li>
+            <li>MileAge : ${car.mileage}</li>
+            <li>Manufacture : ${car.manufacture}</li>
+            <li>Condition : ${car.condition}</li>
+          </div>`;
+          carFound = true;
+          break;
+        }
+      }
+      if (carFound) break;
+    }
+
+    if (!carFound) {
+      // If no match is found
+      main.innerHTML = `<p>No cars found for "${query}"</p>`;
+    }
+  }
+});
+
 
 // manufacture.addEventListener("change", function () {
 //   var selected = event.target.value;
