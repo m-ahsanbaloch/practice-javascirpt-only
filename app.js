@@ -1506,7 +1506,73 @@ search.addEventListener("input", function (event) {
       main.innerHTML = `<p>No cars found for "${query}"</p>`;
     }
   }
+});search.addEventListener("input", function (event) {
+  const query = event.target.value.toLowerCase(); // Get the input and convert to lowercase for case-insensitive matching
+  main.innerHTML = ""; // Clear the main container
+
+  const queryParts = query.split(" "); // Split the query by spaces (e.g., "toyota corolla")
+
+  // Match Manufacturer and Model (if both are provided)
+  if (queryParts.length > 1) {
+    const manufacturer = queryParts[0];
+    const model = queryParts.slice(1).join(" "); // Join the rest of the parts as the model name
+    if (cars[manufacturer] && cars[manufacturer][model]) {
+      const car = cars[manufacturer][model];
+      main.innerHTML = `<div class="card">
+        <img src="${car.image}" alt="${car.model}">
+        <h3>${car.model}</h3>
+        <li>Model : ${car.model}</li>
+        <li>MileAge : ${car.mileage}</li>
+        <li>Manufacture : ${car.manufacture}</li>
+        <li>Condition : ${car.condition}</li>
+      </div>`;
+      return;
+    }
+  }
+
+  // Match Manufacturer Only
+  if (cars[query]) {
+    for (const key in cars[query]) {
+      const car = cars[query][key];
+      main.innerHTML += `<div class="card">
+        <img src="${car.image}" alt="${car.model}">
+        <h3>${car.model}</h3>
+        <li>Model : ${car.model}</li>
+        <li>MileAge : ${car.mileage}</li>
+        <li>Manufacture : ${car.manufacture}</li>
+        <li>Condition : ${car.condition}</li>
+      </div>`;
+    }
+    return;
+  }
+
+  // Match Model Only
+  let carFound = false;
+  for (const manufacturer in cars) {
+    for (const model in cars[manufacturer]) {
+      if (model === query) {
+        const car = cars[manufacturer][model];
+        main.innerHTML = `<div class="card">
+          <img src="${car.image}" alt="${car.model}">
+          <h3>${car.model}</h3>
+          <li>Model : ${car.model}</li>
+          <li>MileAge : ${car.mileage}</li>
+          <li>Manufacture : ${car.manufacture}</li>
+          <li>Condition : ${car.condition}</li>
+        </div>`;
+        carFound = true;
+        break;
+      }
+    }
+    if (carFound) break;
+  }
+
+  // No Match Found
+  if (!carFound && main.innerHTML === "") {
+    main.innerHTML = `<p>No cars found for "${query}"</p>`;
+  }
 });
+
 
 
 // manufacture.addEventListener("change", function () {
