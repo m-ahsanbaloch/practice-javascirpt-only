@@ -1405,7 +1405,7 @@ var cars = {
       image: "https://images.pexels.com/photos/358079/pexels-photo-358079.jpeg",
     },
   },
-};
+}; 
 
 
 for (var key in cars) {
