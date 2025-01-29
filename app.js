@@ -1566,7 +1566,7 @@ search.addEventListener("input", function (event) {
     } 
     if (carFound) break;
   }
-
+   
   // No Match Found
   if (!carFound && main.innerHTML === "") {
     main.innerHTML = `<p>No cars found for "${query}"</p>`;
