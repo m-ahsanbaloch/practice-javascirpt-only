@@ -1563,7 +1563,7 @@ search.addEventListener("input", function (event) {
         carFound = true;
         break;
       }
-    }
+    } 
     if (carFound) break;
   }
 
