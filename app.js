@@ -1571,9 +1571,7 @@ search.addEventListener("input", function (event) {
   if (!carFound && main.innerHTML === "") {
     main.innerHTML = `<p>No cars found for "${query}"</p>`;
   }
-}); 
- 
-   
+});    
 
 // manufacture.addEventListener("change", function () {
 //   var selected = event.target.value;
