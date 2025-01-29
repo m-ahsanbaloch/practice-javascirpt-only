@@ -1573,7 +1573,7 @@ search.addEventListener("input", function (event) {
   }
 }); 
  
-
+   
 
 // manufacture.addEventListener("change", function () {
 //   var selected = event.target.value;
