@@ -1572,7 +1572,7 @@ search.addEventListener("input", function (event) {
     main.innerHTML = `<p>No cars found for "${query}"</p>`;
   }
 }); 
-
+ 
 
 
 // manufacture.addEventListener("change", function () {
